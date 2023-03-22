@@ -160,6 +160,16 @@ main {
   font-weight: 600;
 }
 
+@media only screen and (max-width:800px) {
+  .top-title { 
+    font-size: 46px;
+  }
+  
+  .top-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 
 
 
