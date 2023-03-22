@@ -45,7 +45,7 @@ function showAnswers() {
     } else if (userAnswer === correctAnswer) {
       answerItem.innerHTML += `<div class="list-description"><span class="correct">Your answer: ${answerText}</span> - Correct</div>`;
     } else {
-      answerItem.innerHTML += `<div class="list-description"><span class="incorrect">Your answer: ${answerText}</span> - Incorrect (Correct answer: ${question.answers[correctAnswer]})</div>`;
+      answerItem.innerHTML += `<div class="list-description"><span class="incorrect">Your answer: ${answerText}</span> - Incorrect <br><br> Correct answer: ${question.answers[correctAnswer]}</div>`;
     }
 
     answerList.appendChild(answerItem);
