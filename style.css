@@ -24,9 +24,7 @@ body {
   margin-right: auto;
 }
 
-.none {
-  display: none;
-}
+
 
 /* Top */
 .top {
@@ -173,7 +171,7 @@ main {
 }
 
 .main-container {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .main-wrapper {
@@ -181,6 +179,32 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.quiz-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#answers {
+  width: 100%;
+  max-width: 800px;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+#number {
+  color: rgb(249, 245, 6);
+}
+
+.quiz {
+  font-size: 42px;
 }
 
 .btn {
@@ -212,6 +236,64 @@ main {
   flex-direction: column;
 }
 
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.btn-margin {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 36px;
+  background-color: darkcyan;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.list-item {
+  padding: 0 0 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.list-item-title {
+  padding: 20px;
+  background-color: #211967;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  list-style: none;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.list-description{
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.correct {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(20, 150, 20);
+  color: #fff;
+}
+
+.incorrect {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(228, 69, 16);
+  color: #fff;
+}
+
 @media only screen and (max-width:800px) {
   .top-title { 
     font-size: 46px;
@@ -221,17 +303,17 @@ main {
     font-size: 18px;
     line-height: 24px;
   }
-
+  
   .questions-section{
     padding-top: 60px;
     padding-bottom: 100px;
   }
-
+  
   .questions-title{
     font-size: 40px;
     margin-bottom: 40px;
   }
-
+  
   .questions-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -242,12 +324,12 @@ main {
   .questions-section{
     padding-bottom: 80px;
   }
-
+  
   .questions-title{
     font-size: 32px;
     margin-bottom: 40px;
   }
-
+  
   .questions-wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
@@ -255,104 +337,15 @@ main {
   .footer-title{
     font-size: 22px;
   }
+  .main{
+    padding-top: 100px;
+  }
+
+  .quiz{
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* h1 {
-  text-align: center;
-}
-
-.btn-wrapper {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#question {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 20px;
-}
-
-#answers {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-button {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #3e8e41;
-}
-
-.btn-margin {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #4caf50;
-  padding: 14px 28px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.btn-margin:hover {
-  background-color: #3e8e41;
-}
-
-.none {
-  display: none;
-} */

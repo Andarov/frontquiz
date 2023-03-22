@@ -1,6 +1,6 @@
 const html = [
         {
-            question: "<p align=” center”>. Ushbu koddagi 'align' nima?",
+            question: "p align=” center”. Ushbu koddagi 'align' nima?",
             answers: [ "Teg","Element","Atribut","Data"],
             correctAnswer: 2
         },
@@ -11,26 +11,26 @@ const html = [
         },
         {
             question: "HTMLda ishlatiladigan belgilovchi setni tasdiqlash uchun, qaysi kod ishlatiladi?",
-            answers: [ "<meta charset='UTF-8'>","<meta http-equiv='X-UA-Compatible' content='IE=edge'>","<meta name='viewport' content='width=device-width, initial-scale=1.0'>","<meta name='description' content='description'>"],
+            answers: [ "meta charset='UTF-8'","meta http-equiv='X-UA-Compatible' content='IE=edge'","meta name='viewport' content='width=device-width, initial-scale=1.0'","meta name='description' content='description'"],
             correctAnswer: 0
         },
         {
-            question: "<link>, <meta>, <style> va hokazo kabi bosh teglar qaysi teg ichida joylashishi kerak?",
-            answers: [ "<body>","<div>","<section>","<head>"],
+            question: "link, meta, style va hokazo kabi bosh teglar qaysi teg ichida joylashishi kerak?",
+            answers: [ "body","div","section","head"],
             correctAnswer: 3
         },
         {
-            question: "<video> ustiga rasm qo'yish uchun qaysi atributdan foydalanamiz?",
+            question: "video ustiga rasm qo'yish uchun qaysi atributdan foydalanamiz?",
             answers: [ "placeholder","poster","exportports","controls"],
             correctAnswer: 1
         },
         {
-            question: "<input>ga malumot kiritib bo'lmaydigan qilish uchun qaysi atributdan foydalanamiz?",
+            question: "inputga malumot kiritib bo'lmaydigan qilish uchun qaysi atributdan foydalanamiz?",
             answers: [ "disabled","required","default","type"],
             correctAnswer: 0
         },
         {
-            question: "<input> faqat link kiritilishi uchun hizmat qilsa unda <input> turi qanday bo'ladi?",
+            question: "input faqat link kiritilishi uchun hizmat qilsa unda input turi qanday bo'ladi?",
             answers: [ "url","file","link","text"],
             correctAnswer: 0
         },
@@ -40,12 +40,12 @@ const html = [
             correctAnswer: 1
         },
         {
-            question: "<select> ichiga malumotni qaysi teg orqali qo'shamiz?",
+            question: "select ichiga malumotni qaysi teg orqali qo'shamiz?",
             answers: [ "input","option","data","li"],
             correctAnswer: 1
         },
         {
-            question: "<select> ichiga malumotni guruhlashda qaysi tegdan foydalanamiz?",
+            question: "select ichiga malumotni guruhlashda qaysi tegdan foydalanamiz?",
             answers: [ "optgroup","option","group","opt"],
             correctAnswer: 0
         },
@@ -110,13 +110,13 @@ const html = [
             correctAnswer: 0
         },
         {
-            question: "<strong>, <b> teglarining qanday farqi bor?",
-            answers: [ "Hech qanday farqi yo'q","<strong> matnning qolgan qismiga qaraganda mos ravishda katta ahamiyatga ega yoki ko'proq ahamiyatga ega va urg'uli ekanligini bildiradi. Bu semantik ma'noga ega", "Ikkalasi boshqa-boshqa element","<b> matnning qolgan qismiga qaraganda mos ravishda katta ahamiyatga ega yoki ko'proq ahamiyatga ega va urg'uli ekanligini bildiradi. Bu semantik ma'noga ega"],
+            question: "strong, b teglarining qanday farqi bor?",
+            answers: [ "Hech qanday farqi yo'q","strong matnning qolgan qismiga qaraganda mos ravishda katta ahamiyatga ega yoki ko'proq ahamiyatga ega va urg'uli ekanligini bildiradi. Bu semantik ma'noga ega", "Ikkalasi boshqa-boshqa element","b matnning qolgan qismiga qaraganda mos ravishda katta ahamiyatga ega yoki ko'proq ahamiyatga ega va urg'uli ekanligini bildiradi. Bu semantik ma'noga ega"],
             correctAnswer: 1
         },
         {
             question: "Qaysi teg orqali veb sahifani veb sahifa ichida ko'rsatishimiz mumkin?",
-            answers: [ "<base>","<iframe>","<samp>","<map>"],
+            answers: [ "base","iframe","samp","map"],
             correctAnswer: 1
         },
         {
@@ -125,37 +125,37 @@ const html = [
             correctAnswer: 0
         },
         {
-            question: "<link> va <a> teglari o'rtasida qanday farq mavjud?",
-            answers: [ "<link> tegi youtobedan video olib kelish uchun ishlatilinadi. <a> tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","<link> tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. <a> tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","Ikkalasi aynan bir hil teglar hisoblanadi","<a> tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. <link> tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi"],
+            question: "link va a teglari o'rtasida qanday farq mavjud?",
+            answers: [ "link tegi youtobedan video olib kelish uchun ishlatilinadi. a tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","link tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. a tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","Ikkalasi aynan bir hil teglar hisoblanadi","a tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. link tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi"],
             correctAnswer: 3
         },
         {
-            question: "<select> ichidagi <option> malumoti serverda korinishi uchun nima ish qilamiz?",
-            answers: [ "<option>ga name atributi beriladi","<option>ga value atributi beriladi","<select>ga value atributi beriladi","<option>ga title atributi beriladi"],
+            question: "select ichidagi option malumoti serverda korinishi uchun nima ish qilamiz?",
+            answers: [ "optionga name atributi beriladi","optionga value atributi beriladi","selectga value atributi beriladi","optionga title atributi beriladi"],
             correctAnswer: 1
         },
         {
-            question: "<input>ning qaysi turida malumot serverdan ko'rinishi uchun qo'shimcha value atributidan foydalanamiz?",
+            question: "inputning qaysi turida malumot serverdan ko'rinishi uchun qo'shimcha value atributidan foydalanamiz?",
             answers: [ "text","search","checkbox","radio"],
             correctAnswer: 3
         },
         {
-            question: "<a> va <button>ning farqi?",
-            answers: [ "<a> tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. <button> sahifaning o'zida qandaydir dinamik vazifa bajaradi.","<button> tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. <a> tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","Ikkalasi aynan bir hil teglar hisoblanadi","<a> tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. <button> sahifaning o'zida qandaydir dinamik vazifa bajaradi.","<a> tegi youtobedan video olib kelish uchun ishlatilinadi. <button> tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi"],
+            question: "a va buttonning farqi?",
+            answers: [ "a tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. button sahifaning o'zida qandaydir dinamik vazifa bajaradi.","button tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. a tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","Ikkalasi aynan bir hil teglar hisoblanadi","a tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. button sahifaning o'zida qandaydir dinamik vazifa bajaradi.","a tegi youtobedan video olib kelish uchun ishlatilinadi. button tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi"],
             correctAnswer: 2
         },
         {
-            question: "<label>ni va <input>ga qanday bog'laymiz?",
-            answers: [ "<input>ning href atributi orqali","for va id atributlari orqali","link orqali","button orqali"],
+            question: "labelni va inputga qanday bog'laymiz?",
+            answers: [ "inputning href atributi orqali","for va id atributlari orqali","link orqali","button orqali"],
             correctAnswer: 1
         },
         {
-            question: "Veb-sahifaga <input> foydalanuvchidan manzil olish uchun qo'yilgan bo'lsa, u holatda input type qanday bo'ladi",
+            question: "Veb-sahifaga input foydalanuvchidan manzil olish uchun qo'yilgan bo'lsa, u holatda input type qanday bo'ladi",
             answers: [ "text","number","range","address"],
             correctAnswer: 0
         },
         {
-            question: "<input> type='search'ning qanday tabiiy stillari bor?",
+            question: "input type='search'ning qanday tabiiy stillari bor?",
             answers: [ "text bilan bir xil","inputga malumot kiritilganida uni yonida x belgisi chiqib qoladi","inputda lupa iconkasi chiqib qoladi","hech qanday qoshimcha stillari yo'q"],
             correctAnswer: 1
         },
@@ -170,12 +170,12 @@ const html = [
             correctAnswer: 2
         },
         {
-            question: "<a> tegidagi target='_blank' atributinging vazifasi nima?",
+            question: "a tegidagi target='_blank' atributinging vazifasi nima?",
             answers: [ "Hujjatni bosilgan oynada yoki yorliqda ochadi","Hujjatni asosiy ramkada ochadi","Link ezilganda ishlamaydigan qilib qo'yadi","Hujjatni yangi oyna yoki yorliqda ochadi"],
             correctAnswer: 3
         },
         {
-            question: "<iframe> katta ekranga o'tmasligini qaysi harakat bilan bajaramiz?",
+            question: "iframe katta ekranga o'tmasligini qaysi harakat bilan bajaramiz?",
             answers: [ "width va height atributlarini o'chirib qoyamiz","allow atributini o'chirib qo'yamiz","allowfullscreen atributini o'chirib qo'yamiz","fullscreen atributini o'chirib qo'yamiz"],
             correctAnswer: 2
         },
@@ -256,7 +256,7 @@ const html = [
             correctAnswer: 3
         },
         {
-            question: "<head> ichida quyidagi qaysi teg kela olmaydi?",
+            question: "head ichida quyidagi qaysi teg kela olmaydi?",
             answers: [ "style","link","form","title"],
             correctAnswer: 2
         },
@@ -276,32 +276,32 @@ const html = [
             correctAnswer: 3
         },
         {
-            question: "<fieldset> sarlavha nima deb nomalanadi?",
+            question: "fieldset sarlavhasi nima deb nomalanadi?",
             answers: [ "field","label","title","legend"],
             correctAnswer: 3
         },
         {
-            question: "<input>ga malumotni kiritishni shart qilish uchun qaysi atributdan foydalanamiz?",
+            question: "inputga malumotni kiritishni shart qilish uchun qaysi atributdan foydalanamiz?",
             answers: [ "disabled","required","default","type"],
             correctAnswer: 1
         },
         {
-            question: "<audio> va <video> elementlarini qayta-qayta ijro qilish imkoniyatini qaysi atribut qo'shib beradi?",
+            question: "audio va video elementlarini qayta-qayta ijro qilish imkoniyatini qaysi atribut qo'shib beradi?",
             answers: [ "retry","autoplay","loop","mute"],
             correctAnswer: 2
         },
         {
-            question: "<audio> va <video> elementlarini ovozsiz qilish imkoniyatini qaysi atribut qo'shib beradi?",
+            question: "audio va video elementlarini ovozsiz qilish imkoniyatini qaysi atribut qo'shib beradi?",
             answers: [ "retry","autoplay","loop","mute"],
             correctAnswer: 3
         },
         {
-            question: "<audio> va <video> elementlarini avtomatik ijro qilish imkoniyatini qaysi atribut qo'shib beradi?",
+            question: "audio va video elementlarini avtomatik ijro qilish imkoniyatini qaysi atribut qo'shib beradi?",
             answers: [ "retry","autoplay","loop","mute"],
             correctAnswer: 1
         },
         {
-            question: "<audio> va <video> elementlarini qolipi qaysi atribut yordamida?",
+            question: "audio va video elementlarini qolipi qaysi atribut yordamida?",
             answers: [ "maket","autoplay","controls","mute"],
             correctAnswer: 2
         },
