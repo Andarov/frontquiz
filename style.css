@@ -24,6 +24,10 @@ body {
   margin-right: auto;
 }
 
+.none {
+  display: none;
+}
+
 /* Top */
 .top {
   background-color: #211967;
@@ -158,6 +162,54 @@ main {
   text-align: center;
   font-size: 26px;
   font-weight: 600;
+}
+
+/* Sections */
+.main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: linear-gradient(to right, rgb(29, 67, 80), rgb(164, 57, 49));
+  color: #f9f9f9
+}
+
+.main-container {
+  max-width: 600px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  width: 70%;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 16px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.quiz-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (max-width:800px) {
