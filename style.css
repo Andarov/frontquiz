@@ -1,8 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
 
-h1 {
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Top */
+.top {
+  background-color: #211967;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-title {
+  margin-bottom: 24px;  
+  font-size: 64px;
+  font-family: 'Coolvetica', sans-serif;
+}
+
+.top-title-mark {
+  color: rgb(249, 245, 6);
+}
+
+.top-text {
+  max-width: 800px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.logos {
+  width: 100%;
+  max-width: 800px;
+  height: 190px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.top-text-success {
+  font-size: 26px;
+  line-height: 32px;
+  font-family: 'Cabin', sans-serif;
+  color: rgb(249, 245, 6);
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h1 {
   text-align: center;
 }
 
@@ -60,4 +168,4 @@ button:hover {
 
 .none {
   display: none;
-}
+} */
