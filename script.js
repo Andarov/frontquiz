@@ -41,11 +41,11 @@ function showAnswers() {
     const answerText = question.answers[userAnswer];
 
     if (userAnswer === undefined) {
-      answerItem.innerHTML += `<div class="list-description">(Your answer: <span style="color:orange">Not answered</span>)</div>`;
+      answerItem.innerHTML += `<div class="list-description">Javobingiz: <span style="color:orange">Javob berilmadi</span></div>`;
     } else if (userAnswer === correctAnswer) {
-      answerItem.innerHTML += `<div class="list-description"><span class="correct">Your answer: ${answerText}</span> - Correct</div>`;
+      answerItem.innerHTML += `<div class="list-description"><span class="correct">Javobingiz: ${answerText}</span> - To'g'ri</div>`;
     } else {
-      answerItem.innerHTML += `<div class="list-description"><span class="incorrect">Your answer: ${answerText}</span> - Incorrect <br><br> Correct answer: ${question.answers[correctAnswer]}</div>`;
+      answerItem.innerHTML += `<div class="list-description"><span class="incorrect">Javobingiz: ${answerText}</span> - Xato<br><br>To'gri javob: ${question.answers[correctAnswer]}</div>`;
     }
 
     answerList.appendChild(answerItem);
