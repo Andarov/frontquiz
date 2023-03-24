@@ -54,7 +54,7 @@ function showAnswers() {
 }
 
 function showResults() {
-  questionElement.textContent = `You got ${score} out of ${questions.length} questions correct!`;
+  questionElement.textContent = `Siz ${questions.length}ta savoldan ${score}ta to'g'ri javob berdingiz!`;
   while (answersElement.firstChild) {
     answersElement.removeChild(answersElement.firstChild);
   }
