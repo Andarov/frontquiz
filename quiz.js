@@ -120,11 +120,6 @@ const html = [
             correctAnswer: 1
         },
         {
-            question: "“display: none” va “visibility: hidden” o'rtasida qanday farq mavjud?",
-            answers: [ "Agar biz HTML elementi uchun 'visibility: hidden' hossasidan foydalansak, u holda bu element veb-sahifadan yashiriladi, lekin veb-sahifada joy egallaydi","Agar biz HTML elementi uchun 'display: none' hossasidan foydalansak, u holda bu element veb-sahifadan yashiriladi, lekin veb-sahifada joy egallaydi","Ikkalasi aynan bir hil xossalar hisoblanadi","Agar biz HTML elementi uchun 'visibility: hidden' hossasidan foydalansak, u holda element yashirin bo'ladi va veb-sahifada hech qanday joy egallamaydi"],
-            correctAnswer: 0
-        },
-        {
             question: "link va a teglari o'rtasida qanday farq mavjud?",
             answers: [ "link tegi youtobedan video olib kelish uchun ishlatilinadi. a tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","link tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. a tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi","Ikkalasi aynan bir hil teglar hisoblanadi","a tegi boshqa veb-sahifaga yoki veb-sahifaning ma'lum bir qismiga giperhavola yaratish uchun ishlatiladi. link tegi esa hujjat va tashqi manba o'rtasidagi havolani belgilaydi"],
             correctAnswer: 3
@@ -458,5 +453,174 @@ const css = [
         answers: [ "rgba faqat textni shaffof qilish uchun xizmai","opacity faqat orqa fonni shaffof qiladi","rgba elementni barcha qismini shaffof qiladi","opacity elementni barcha qismini shaffof qiladi"],
         correctAnswer: 3
     },
+    {
+        question: "Nuqtali chegara qanday yoziladi?",
+        answers: [ "dashed","dotted","solid","groove"],
+        correctAnswer: 1
+    },
+    {
+        question: "Chiziqli chegara qanday yoziladi?",
+        answers: [ "dashed","dotted","solid","groove"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tepa va pastda birin-ketin joylashgan ikkita element joylashgan, birinchi elementga past tarafdan 40px margin berilgan, ikkinchi elementga tepadan 30px berilgan. Birinchi va ikkinchi element o'rtasida qancha margin bo'ladi?",
+        answers: [ "40px","30px","70px","10px"],
+        correctAnswer: 0
+    },
+    {
+        question: "padding: 25px 75px 100px; O'ng tarafdan qancha padding mavjud.",
+        answers: [ "25px","100px","50px","75px"],
+        correctAnswer: 3
+    },
+    {
+        question: "padding: 25px 75px 100px; Past tarafdan qancha padding mavjud.",
+        answers: [ "25px","100px","50px","75px"],
+        correctAnswer: 1
+    },
+    {
+        question: "padding: 25px 75px 100px; Tepa tarafdan qancha padding mavjud.",
+        answers: [ "25px","100px","50px","75px"],
+        correctAnswer: 0
+    },
+    {
+        question: "width:100px; padding:20px; border:5px; Agar element box-sizing: content-box bo'lsa uni eni qancha bo'ladi.",
+        answers: [ "125px","100px","150px","130px"],
+        correctAnswer: 1
+    },
+    {
+        question: "width:100px; border:5px; Agar element box-sizing: content-box bo'lsa uni eni qancha bo'ladi.",
+        answers: [ "105px","100px","110px","115px"],
+        correctAnswer: 1
+    },
+    {
+        question: "text-transform: uppercase qanday vazifa bajaradi?",
+        answers: [ "harflarni hammasini katta harf qilib beradi","harflarni hammasini kichik harf qilib beradi","Matndagi hamma so'zlarni bosh harfini katta harf qilib beradi","matnni qiya qilib beradi"],
+        correctAnswer: 0
+    },
+    {
+        question: "text-transform: lowercase qanday vazifa bajaradi?",
+        answers: [ "harflarni hammasini katta harf qilib beradi","harflarni hammasini kichik harf qilib beradi","Matndagi hamma so'zlarni bosh harfini katta harf qilib beradi","matnni qiya qilib beradi"],
+        correctAnswer: 1
+    },
+    {
+        question: "text-transform: capitalize qanday vazifa bajaradi?",
+        answers: [ "harflarni hammasini katta harf qilib beradi","harflarni hammasini kichik harf qilib beradi","Matndagi hamma so'zlarni bosh harfini katta harf qilib beradi","matnni qiya qilib beradi"],
+        correctAnswer: 2
+    },
+    {
+        question: "Foydalanuvchi tashrif buyurgan havola stili qanday beriladi?",
+        answers: [ ":link",":visited",":hover", ":active"],
+        correctAnswer: 1
+    },
+    {
+        question: "Oddiy tashrif buyurilmagan havola stili qanday beriladi?",
+        answers: [ ":link",":visited",":hover", ":active"],
+        correctAnswer: 0
+    },
+    {
+        question: "Foydalanuvchi havola ustiga sichqonchani bosganda stili qanday beriladi?",
+        answers: [ ":link",":visited",":hover", ":active"],
+        correctAnswer: 2
+    },
+    {
+        question: "Foydalanuvchi havola bosgandagi stili qanday beriladi?",
+        answers: [ ":link",":visited",":hover", ":active"],
+        correctAnswer: 3
+    },
+    {
+        question: "Jadvalni juft qatorlarini stilini berishimiz uchun nima qilishimiz kerak",
+        answers: [ ":nth-child(odd)",":table(odd)",":nth-child(even)", ":table(even)"],
+        correctAnswer: 2
+    },
+    {
+        question: "Jadvalni toq qatorlarini stilini berishimiz uchun nima qilishimiz kerak",
+        answers: [ ":nth-child(odd)",":table(odd)",":nth-child(even)", ":table(even)"],
+        correctAnswer: 0
+    },
+    {
+        question: "“display: none” va “visibility: hidden” o'rtasida qanday farq mavjud?",
+        answers: [ "Agar biz HTML elementi uchun 'visibility: hidden' hossasidan foydalansak, u holda bu element veb-sahifadan yashiriladi, lekin veb-sahifada joy egallaydi","Agar biz HTML elementi uchun 'display: none' hossasidan foydalansak, u holda bu element veb-sahifadan yashiriladi, lekin veb-sahifada joy egallaydi","Ikkalasi aynan bir hil xossalar hisoblanadi","Agar biz HTML elementi uchun 'visibility: hidden' hossasidan foydalansak, u holda element yashirin bo'ladi va veb-sahifada hech qanday joy egallamaydi"],
+        correctAnswer: 0
+    },
+    {
+        question: "max-height haqida to'gri malumot berilgan qatorni toping.",
+        answers: [ "Element bo'yi berilgan heightdan katta bo'lishi mumkin, kichik bo'lmaydi","Element bo'yi berilgan heightdan kichik bo'lishi mumkin, katta bo'lmaydi","berilgan height o'zgarmas bo'ladi", "berilgan elementga qarab undan ko'p va kam bo'lishi mumkin"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni qaysi yo'nalishda joylashishini belgilaydi",
+        answers: [ "flex-wrap","flex-direction","align-items", "align-content"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni vertikal ravishda yig'adi (lekin pastdan yuqoriga)",
+        answers: [ "flex-direction: column-reverse","flex-direction: column","flex-direction: row-reverse", "flex-direction: row"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni elementlarni gorizontal ravishda yig'adi (chapdan o'ngga)",
+        answers: [ "flex-direction: column-reverse","flex-direction: column","flex-direction: row-reverse", "flex-direction: row"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni elementlarni gorizontal ravishda yig'adi (lekin o'ngdan chapga)",
+        answers: [ "flex-direction: column-reverse","flex-direction: column","flex-direction: row-reverse", "flex-direction: row"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni agar sig'may qolsa pastga tushishini belgilaydi",
+        answers: [ "flex-wrap: wrap","flex-wrap: nowrap","flex-direction: row-reverse", "flex-direction: row"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni tartibini belgilashimiz mumkin",
+        answers: [ "flex-wrap: wrap","flex-wrap: nowrap","order", "flex-shrink"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi flex hossasi elementlarni tartibini belgilashimiz mumkin",
+        answers: [ "flex-wrap: wrap","flex-wrap: nowrap","order", "flex-shrink"],
+        correctAnswer: 2
+    },
+    {
+        question: "Quyidagilardan qaysi biri pseudoclass hisoblanadi?",
+        answers: [ "hover","shrink","order", "after"],
+        correctAnswer: 0
+    },
+    {
+        question: "Quyidagilardan qaysi biri pseudoclass hisoblanadi?",
+        answers: [ "before","shrink","order", "active"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagilardan qaysi biri pseudoelement hisoblanadi?",
+        answers: [ "before","shrink","order", "active"],
+        correctAnswer: 0
+    },
+    {
+        question: "pseudoelement haqida not'g'ri fikr berilgan javobni toping",
+        answers: [ "content bo'lishi shart","display inlineligi uchun ularni inline-block qilib qo'yish kerak","Agar ota element flex bo'lsa uni inline-block qilishimiz shart emas", "pseudoelementlar display hususiyati tabiiy block bo'ladi"],
+        correctAnswer: 3
+    },
+    {
+        question: "filterning qaysi hossasi yordamida berilgan elementga hiralik qo'shishimiz mumkin?",
+        answers: ["grayscale", "brightness", "blur", "contrast"],
+        correctAnswer: 2
+    },
+    {
+        question: "filterning qaysi hossasi yordamida berilgan elementga yorug'lik qo'shishimiz mumkin?",
+        answers: ["grayscale", "brightness", "blur", "contrast"],
+        correctAnswer: 1
+    },
+    {
+        question: "filterning qaysi hossasi yordamida berilgan elementga kulrang effekt qo'shishimiz mumkin?",
+        answers: ["grayscale", "brightness", "blur", "contrast"],
+        correctAnswer: 0
+    },
 ]
+
+console.log(css.length)
+
+
 export { html, css }
