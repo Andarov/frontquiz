@@ -459,7 +459,7 @@ const css = [
         correctAnswer: 1
     },
     {
-        question: "Chiziqli chegara qanday yoziladi?",
+        question: "Uzuk chiziqli chegara qanday yoziladi?",
         answers: [ "dashed","dotted","solid","groove"],
         correctAnswer: 0
     },
@@ -519,12 +519,12 @@ const css = [
         correctAnswer: 0
     },
     {
-        question: "Foydalanuvchi havola ustiga sichqonchani bosganda stili qanday beriladi?",
+        question: "Foydalanuvchi havola ustiga sichqonchani olib borgandagi stili qanday beriladi?",
         answers: [ ":link",":visited",":hover", ":active"],
         correctAnswer: 2
     },
     {
-        question: "Foydalanuvchi havola bosgandagi stili qanday beriladi?",
+        question: "Foydalanuvchi havolani ustiga bosgandagi stili qanday beriladi?",
         answers: [ ":link",":visited",":hover", ":active"],
         correctAnswer: 3
     },
@@ -620,7 +620,69 @@ const css = [
     },
 ]
 
-console.log(css.length)
+const cssAdvanced = [
+    {
+        question: "Quyidagilardan qaysi biri position hususiyatiga tegishli emas?",
+        answers: [ "static","regular","relative","sticky"],
+        correctAnswer: 1
+    },
+    {
+        question: "Agar elementga position berilmagan bo'lsa uni tabiiy(by default) hususiyati qanday bo'ladi?",
+        answers: [ "static","regular","relative","sticky"],
+        correctAnswer: 0
+    },
+    {
+        question: "Elementlarni bir joyga qotirib qo'yish positionning qaysi hususiyatidan foydalanamiz?",
+        answers: [ "static","fixed","relative","sticky"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi position hususiyati o'ziga eng yaqin bo'lgan static bo'lmagan elementga nisbatan joylashadi?",
+        answers: [ "static","fixed","relative","absolute"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi position hususiyati har doim bodyga nisbatan joylashadi?",
+        answers: [ "static","fixed","relative","absolute"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi position hususiyati top, left, right, bottom hususiyatlarini qabul qilmaydi?",
+        answers: [ "static","fixed","relative","absolute"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi position hususiyati o'z joyini yo'qotib inline-block elementga aylanib qoladi?",
+        answers: [ "static","sticky","relative","absolute"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi position hususiyatida z-index hususiyati ishlamaydi?",
+        answers: [ "static","sticky","relative","absolute"],
+        correctAnswer: 0
+    },
+    {
+        question: "Custom property nimani ichida yoziladi?",
+        answers: [ ":root",":custom-props",":custom-property",":props"],
+        correctAnswer: 0
+    },
+    {
+        question: "Custom property qanday yoziladi?",
+        answers: [ "-primary-color:","--primary-color:","primary-color:","primary__color:"],
+        correctAnswer: 1
+    },
+    {
+        question: "display:gridda qatorlar orasi qanday ochiladi?",
+        answers: ["row-gap", "column-gap", "space-x", "space-y"],
+        correctAnswer: 0
+    },
+    {
+        question: "display:grid containeri ichidagi elementlar 2ta ustunda joylashishi uchun qanday kod yozamiz?",
+        answers: ["grid-template-columns: auto auto;", "grid-template-columns: 1fr 1fr;", "barcha javoblar to'g'ri", "grid-template-columns: repeat(2, 1fr)"],
+        correctAnswer: 2
+    },
+]
 
+console.log(cssAdvanced.length);
 
-export { html, css }
+export { html, css, cssAdvanced }

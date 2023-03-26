@@ -1,4 +1,4 @@
-import { html, css } from './quiz.js';
+import { html, css, cssAdvanced } from './quiz.js';
 
 let number = document.querySelector('#number');
 let currentQuestion = 0;
@@ -75,30 +75,41 @@ function getRandomQuestions(arr) {
 let questions;
 const htmlBtn = document.querySelector('.html-btn');
 const cssBtn = document.querySelector('.css-btn');
+const cssAdvancedBtn = document.querySelector('.css-advanced');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
-if(htmlBtn){
-  htmlBtn.addEventListener('click', function() {
-    htmlBtn.classList.add('none');
-    mainWrapper.classList.add('none');
+const startQuiz = function(){
+  mainWrapper.classList.add('none');
     result.classList.add('block')
     currentQuestion = 0;
-    questions = getRandomQuestions(html);
     number.textContent = currentQuestion + 1;
     showQuestion(questions[currentQuestion]);
+  }
+  
+  if(htmlBtn){
+    htmlBtn.addEventListener('click', function() {
+      htmlBtn.classList.add('none');
+      questions = getRandomQuestions(html);
+    startQuiz()
   });
 }
 
-cssBtn.addEventListener('click', function() {
-  cssBtn.classList.add('none');
-  mainWrapper.classList.add('none');
-  result.classList.add('block')
-  currentQuestion = 0;
-  questions = getRandomQuestions(css);
-  number.textContent = currentQuestion + 1;
-  showQuestion(questions[currentQuestion]);
-});
+if(cssBtn){
+  cssBtn.addEventListener('click', function() {
+    cssBtn.classList.add('none');
+    questions = getRandomQuestions(css);
+    startQuiz()
+  });
+}
+
+if(cssAdvancedBtn){
+  cssAdvancedBtn.addEventListener('click', function() {
+    cssAdvancedBtn.classList.add('none');
+    questions = getRandomQuestions(cssAdvanced);
+    startQuiz()
+  });
+}
 
 // Step next question
 function nextQuestion() {
