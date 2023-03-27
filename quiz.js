@@ -681,6 +681,196 @@ const cssAdvanced = [
         answers: ["grid-template-columns: auto auto;", "grid-template-columns: 1fr 1fr;", "barcha javoblar to'g'ri", "grid-template-columns: repeat(2, 1fr)"],
         correctAnswer: 2
     },
+    {
+        question: "display:gridda elementlar 3ta ustunda joylashgan bo'lsa, birinchi elementni birinchi ustun va ikkinchi ustun ornida joylashishi uchun qaysi css xossasi yoziladi?",
+        answers: ["grid-column: 1 / 2", "grid-column: 1 / 3", "grid-row: 1 / 2", "grid-row: 1 / 3"],
+        correctAnswer: 1
+    },
+    {
+        question: "display:gridda elementlar 3ta qatorda joylashgan bo'lsa, birinchi elementni birinchi va ikkinchi qatorga cho'zib joylash uchun qaysi css xossasi yoziladi?",
+        answers: ["grid-column: 1 / 2", "grid-column: 1 / 3", "grid-row: 1 / 2", "grid-row: 1 / 3"],
+        correctAnswer: 3
+    },
+    {
+        question: "display:gridda elementlar 3ta qatorda joylashgan bo'lsa, birinchi elementni birinchi va ikkinchi qatorga va birinchi va ikkinchi ustunda cho'zib joylash uchun qaysi css xossasi yoziladi?",
+        answers: ["grid-area: 1 / 1 / 3 / 3", "grid-area: 1 / 3 / 1 / 3", "grid-area: 1 / 1 / 2 / 2", "grid-area: 1 / 2 / 1 / 2"],
+        correctAnswer: 1
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["header-list", "header_list", "headerList", "header__list"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["footer-list", "footer_list", "footerList", "footer__list"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["list-item", "list_item", "list__item", "listItem"],
+        correctAnswer: 2
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["nav-list", "nav__list", "navList", "nav_list"],
+        correctAnswer: 1
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["btn-red", "btn__red", "btn_red", "btnRed"],
+        correctAnswer: 1
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["btn-primary", "btn--primary", "btn_primary", "btnPrimary"],
+        correctAnswer: 1
+    },
+    {
+        question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
+        answers: ["btn-success", "btn--success", "btn_success", "btnSuccess"],
+        correctAnswer: 1
+    },
+    {
+        question: "Jadbalni cheagaralarini birlashtirish uchun qaysi css xossasidan foydalanamiz?",
+        answers: ["border-collapse: collapse", "border-collapse: uncollapse", "border-collapse: collect", "border-collapse: connect"],
+        correctAnswer: 0
+    },
+    {
+        question: "Transformning qaysi turida elementlarni joyidan jildirishimiz mumkin?",
+        answers: ["scale", "rotate", "translate", "skew"],
+        correctAnswer: 2
+    },
+    {
+        question: "Transformning qaysi turida elementlarni gradus bo'ylab aylantirish mumkin?",
+        answers: ["scale", "rotate", "translate", "skew"],
+        correctAnswer: 1
+    },
+    {
+        question: "Transformning qaysi turida elementlarni cho'zish mumkin?",
+        answers: ["scale", "rotate", "translate", "skew"],
+        correctAnswer: 0
+    },
+    {
+        question: "Transformning qaysi turida elementlarni qiyshaytishimiz mumkin?",
+        answers: ["scale", "rotate", "translate", "skew"],
+        correctAnswer: 3
+    },
+    {
+        question: "transform:scale qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["45deg", "-45deg", "2px", "1.2"],
+        correctAnswer: 3
+    },
+    {
+        question: "transform:scale qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["45deg", "-45deg", "2px", "0.5"],
+        correctAnswer: 3
+    },
+    {
+        question: "transform:translate qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["45deg", "-45deg", "20px", "0.5"],
+        correctAnswer: 2
+    },
+    {
+        question: "transform:translate qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["45deg", "-45deg", "-20px", "0.5"],
+        correctAnswer: 2
+    },
+    {
+        question: "transform:rotate qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["45deg", "20px", "-20px", "0.5"],
+        correctAnswer: 0
+    },
+    {
+        question: "transform:rotate qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["20px", "-45deg", "-20px", "0.5"],
+        correctAnswer: 1
+    },
+    {
+        question: "transform:skew qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["45deg", "20px", "-20px", "0.5"],
+        correctAnswer: 0
+    },
+    {
+        question: "transform:skew qiymati to'g'ri berilgan qatorni toping?",
+        answers: ["20px", "-45deg", "-20px", "0.5"],
+        correctAnswer: 1
+    },
+    {
+        question: "Animatsiyani bajarish uchun qancha vaqt ketishini qaysi css xossasi yordamida belgilashimiz mumkin?",
+        answers: ["animation-duration", "animation-delay", "animation-direction", "animation-iteration-count"],
+        correctAnswer: 0
+    },
+    {
+        question: "Animatsiyani bajarish uchun qancha vaqt kutilishini qaysi css xossasi yordamida belgilashimiz mumkin?",
+        answers: ["animation-duration", "animation-delay", "animation-direction", "animation-iteration-count"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi css xossasi yordamida animatsiyani necha marta ishga tushishini belgilash mumkin?",
+        answers: ["animation-duration", "animation-delay", "animation-direction", "animation-iteration-count"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi animatsiya xossasi yordamida animatsiyani cheksiz qilishimiz mumkin?",
+        answers: ["iteration", "infinite", "loop", "alternate"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi animatsiya xossasi yordamida animatsiya teskari yo'nalishda o'ynaladi (orqaga)?",
+        answers: ["iteration", "reverse", "loop", "alternate"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi animatsiya xossasi yordamida animatsiya avval oldinga, keyin esa orqaga o'ynaladi?",
+        answers: ["iteration", "reverse", "loop", "alternate"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi animatsiya xossasi yordamida animatsiya avval orqaga, keyin oldinga qarab ijro etiladi?",
+        answers: ["iteration", "alternate-reverse", "loop", "alternate"],
+        correctAnswer: 1
+    },
+    {
+        question: "CSSning qaysi hossasi yordamida elementlar shaklini osongina o'zgartirishimiz mumkin(uchburchak, yumaloq, romb, v.h.k)?",
+        answers: ["border", "circle", "clip-path", "circle-path"],
+        correctAnswer: 2
+    },
+    {
+        question: "Agar element eni 300px bo'lsa, bola elementga 50% width berilgan bo'lsa, bola element eni qancha bo'ladi?",
+        answers: ["ekranning 50%", "150px", "50px", "300px"],
+        correctAnswer: 1
+    },
+    {
+        question: "Agar element eni 300px bo'lsa, bola elementga 50vw width berilgan bo'lsa, bola element eni qancha bo'ladi?",
+        answers: ["ekranning 50%", "150px", "50px", "300px"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi unit turida ushbu element yoki ota-ona elementi font-size hususiyati orqali o'lchangan kenglikka teng keladi?",
+        answers: ["px", "em", "rem", "%"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi unit turida html elementining font-size hususiyati belgilanmagan bo'lsa, unda umumiy qoida bo'yicha 16px qabul qilinad?",
+        answers: ["px", "em", "rem", "%"],
+        correctAnswer: 2
+    },
+    {
+        question: "Kod yozishda bazi mahsulotlarning (masalan, brauzerlar) yangi yoki kuchli versiyalari uchun mahsulotning oldingi versiyalaridan farqli xususiyatlarini o'zgartirish uchun qo'llaniladigan belgilar nima deyiladi?",
+        answers: ["minifikatsiya", "prefikatsiya", "moderatsiya", "mobilizatsiya"],
+        correctAnswer: 1
+    },
+    {
+        question: "Kod yozishda foydalaniladigan bir qator vositalar va usullar yordamida kodning o'lchamini kichraytirish (ya'ni, kodning hajmini yaxlit bajarish) jarayoni nima deyiladi?",
+        answers: ["minifikatsiya", "prefikatsiya", "moderatsiya", "mobilizatsiya"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi meta teg brauzerga sahifa o'lchamlari va masshtabini boshqarish bo'yicha ko'rsatmalar beradi?",
+        answers: ["<meta name='viewport' content='width=device-width, initial-scale=1.0'>", "<meta charset='UTF-8'>", "<meta name='robots' content='index, follow'>", "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"],
+        correctAnswer: 0
+    },
 ]
 
 console.log(cssAdvanced.length);
