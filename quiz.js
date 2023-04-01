@@ -107,7 +107,7 @@ const html = [
         {
             question: " HTML teglari va elementlari bir xilmi?",
             answers: [ "Ha","Yo'q","Bilmadim","Malumotim yo'q"],
-            correctAnswer: 0
+            correctAnswer: 1
         },
         {
             question: "strong, b teglarining qanday farqi bor?",
