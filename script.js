@@ -1,4 +1,4 @@
-import { html, css, cssAdvanced } from './quiz.js';
+import { html, css, cssAdvanced, tboot } from './quiz.js';
 
 let number = document.querySelector('#number');
 let currentQuestion = 0;
@@ -76,6 +76,7 @@ let questions;
 const htmlBtn = document.querySelector('.html-btn');
 const cssBtn = document.querySelector('.css-btn');
 const cssAdvancedBtn = document.querySelector('.css-advanced');
+const tBoot = document.querySelector('.tboot-btn');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
@@ -107,6 +108,14 @@ if(cssAdvancedBtn){
   cssAdvancedBtn.addEventListener('click', function() {
     cssAdvancedBtn.classList.add('none');
     questions = getRandomQuestions(cssAdvanced);
+    startQuiz()
+  });
+}
+
+if(tBoot){
+  tBoot.addEventListener('click', function() {
+    tBoot.classList.add('none');
+    questions = getRandomQuestions(tboot);
     startQuiz()
   });
 }

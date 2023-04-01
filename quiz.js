@@ -449,17 +449,17 @@ const css = [
         correctAnswer: 3
     },
     {
-        question: "To'g'ri fikr berilgan qatirni toping",
+        question: "To'g'ri fikr berilgan qatorni toping",
         answers: [ "rgba faqat textni shaffof qilish uchun xizmai","opacity faqat orqa fonni shaffof qiladi","rgba elementni barcha qismini shaffof qiladi","opacity elementni barcha qismini shaffof qiladi"],
         correctAnswer: 3
     },
     {
-        question: "Nuqtali chegara qanday yoziladi?",
+        question: "Nuqtali border qanday yoziladi?",
         answers: [ "dashed","dotted","solid","groove"],
         correctAnswer: 1
     },
     {
-        question: "Uzuk chiziqli chegara qanday yoziladi?",
+        question: "Uzuk chiziqli border qanday yoziladi?",
         answers: [ "dashed","dotted","solid","groove"],
         correctAnswer: 0
     },
@@ -572,11 +572,6 @@ const css = [
         question: "Qaysi flex hossasi elementlarni agar sig'may qolsa pastga tushishini belgilaydi",
         answers: [ "flex-wrap: wrap","flex-wrap: nowrap","flex-direction: row-reverse", "flex-direction: row"],
         correctAnswer: 0
-    },
-    {
-        question: "Qaysi flex hossasi elementlarni tartibini belgilashimiz mumkin",
-        answers: [ "flex-wrap: wrap","flex-wrap: nowrap","order", "flex-shrink"],
-        correctAnswer: 2
     },
     {
         question: "Qaysi flex hossasi elementlarni tartibini belgilashimiz mumkin",
@@ -718,7 +713,7 @@ const cssAdvanced = [
     },
     {
         question: "Quyidagilardan qaysi biri BEM yozilish uslubi hisoblanadi?",
-        answers: ["btn-red", "btn__red", "btn_red", "btnRed"],
+        answers: ["btn-red", "btn--red", "btn_red", "btnRed"],
         correctAnswer: 1
     },
     {
@@ -873,6 +868,165 @@ const cssAdvanced = [
     },
 ]
 
-console.log(cssAdvanced.length);
+const tboot = [
+    {
+        question: "Bootsrapda qaysi breakpoint 576 pikseldan 768 pikselgacha javob beradi?",
+        answers: [ "sm","xs","md","lg"],
+        correctAnswer: 0
+    },
+    {
+        question: "Bootsrapda qaysi breakpoint 768 pikseldan 992 pikselgacha javob beradi?",
+        answers: [ "sm","xs","md","lg"],
+        correctAnswer: 2
+    },
+    {
+        question: "Bootsrapda qaysi breakpoint 992 pikseldan 1200 pikselgacha javob beradi?",
+        answers: [ "sm","xs","md","lg"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrapda qaysi breakpoint 576 pikselgacha javob beradi?",
+        answers: [ "sm","xs","md","lg"],
+        correctAnswer: 1
+    },
+    {
+        question: "Bootsrap grid tizimida sahifa necha ustunga bo'linadi?",
+        answers: [ "3","6","9","12"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrap grid tizimida 3ta ustundan iborat bo'lsa 2-ustun sahifa yarmini belgilash kerak bolsa ushbu 2-elementga necha col beriladi?",
+        answers: [ "3","6","9","5"],
+        correctAnswer: 1
+    },
+    {
+        question: "Bootsrap grid tizimida 2ta ustundan iborat bo'lsa 1-ustun sahifa 3/1 qismini belgilash kerak bolsa ushbu 1-elementga necha col beriladi?",
+        answers: [ "3","6","9","4"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrapda qo'shimcha ma'lumotlarni ochish yoki yopish uchun qaysi componentdan foydalanamiz?",
+        answers: [ "alerts","badge","card","accardion"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrapda qaysi component belgilashlarni visual ravishda ko'rsatadi, misol uchun, bir nechta xabarlar yoki yangiliklar bor ekanligini yoki bir mahsulotning miqdorini ko'rsatishda foydalaniladi?",
+        answers: [ "alerts","badge","card","accardion"],
+        correctAnswer: 1
+    },
+    {
+        question: "Bootsrapda qaysi component foydalanuvchilarga xatolik yoki muvaffaqiyatsizliklar haqida ogohlantirish berish uchun ishlatiladi?",
+        answers: [ "alerts","badge","card","accardion"],
+        correctAnswer: 0
+    },
+    {
+        question: "Bootsrapda qaysi component sahifadagi navigatsiya tizimida foydalaniladi va bir sahifadagi joyimizni korsatadigan elementlar ketma-ketligi ko'rinishida ko'rsatish uchun ishlatiladi?",
+        answers: [ "alerts","badge","card","breadcrumb"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrapda qaysi component foydalanuvchiga biror amalni bajarish uchun bitta yoki bir nechta tanlovni taqdim etishga imkon beradi?",
+        answers: [ "dropdown","badge","card","breadcrumb"],
+        correctAnswer: 0
+    },
+    {
+        question: "Bootsrapda qaysi component sahifaning yuqori qismida joylashadi va sahifaning boshqa qismlariga o'tish uchun menyu elementlarini ko'rsatadi?",
+        answers: [ "alerts","badge","card","navbar"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrapda qaysi component yordamida telegram menyusini yaratsak bo'ladi?",
+        answers: [ "breadcrumb","badge","offcanvas","pagination"],
+        correctAnswer: 2
+    },
+    {
+        question: "Bootsrapda qaysi component foydalanuvchilar sahifalarni almashtirishga imkon beradi?",
+        answers: [ "breadcrumb","badge","offcanvas","pagination"],
+        correctAnswer: 3
+    },
+    {
+        question: "Bootsrapda qaysi component foydalanuvchiga amalni ko'rsatishda va amalning qanchalik bajarilganini ko'rsatib berishda yordam beradi?",
+        answers: [ "breadcrumb","badge","progress","pagination"],
+        correctAnswer: 2
+    },
+    {
+        question: "Tailwindda belgilangan bir nechta stillarni bitta o'zgaruvchida jamlash uchun nimadan foydalanamiz?",
+        answers: [ "@aplly","@layer","@components","@base"],
+        correctAnswer: 0
+    },
+    {
+        question: "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch ushbu buyruqni qaysi faylga saqlab qo'yishimiz mumkin?",
+        answers: [ "package.json","tailwind.config.js","package-lock.json","app.js"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda qayta ishlatiluvchi component stillari qaerda yoziladi?",
+        answers: [ "@layer component","@layer components","@layer base","@layer utilities"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda standart ranglar palitrasi har bir rang uchun nechadan nechagacha hisoblanadi?",
+        answers: [ "0-900","50-900","50-950","100-900"],
+        correctAnswer: 2
+    },
+    {
+        question: "Tailwind cssda arbitrary value orqali still berilgan javobni toping?",
+        answers: [ "bg-[#1da1f2]","bg-red-300","bg-br-light-red","bg-red"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda arbitrary value orqali still berilgan javobni toping?",
+        answers: [ "text-[#1da1f2]","text-red-300","text-br-light-red","text-red"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda padding-left qanday beriladi?",
+        answers: [ "p-s","p-l","p-start","p-left"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda margin-left qanday beriladi?",
+        answers: [ "m-s","m-l","m-start","m-left"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda padding-right qanday beriladi?",
+        answers: [ "p-e","p-r","p-end","p-right"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda margin-right qanday beriladi?",
+        answers: [ "m-e","m-r","m-end","m-right"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda leading nima uchun hizmat qiladi?",
+        answers: [ "line-height","list-group","font-weight","font-style"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda tracking nima uchun hizmat qiladi?",
+        answers: [ "word-spacing","letter spacing","font-weight","font-style"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda tracking nima uchun hizmat qiladi?",
+        answers: [ "word-spacing","letter spacing","font-weight","font-style"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda border-radius qanday beriladi?",
+        answers: [ "leading","tracking","rounded","aspect-ratio"],
+        correctAnswer: 2
+    },
+    {
+        question: "Tailwind cssda border-radius qanday beriladi?",
+        answers: [ "leading","tracking","rounded","aspect-ratio"],
+        correctAnswer: 2
+    },
 
-export { html, css, cssAdvanced }
+]
+
+console.log(tboot.length);
+
+export { html, css, cssAdvanced, tboot }
