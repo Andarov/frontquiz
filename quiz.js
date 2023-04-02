@@ -1010,21 +1010,120 @@ const tboot = [
         correctAnswer: 1
     },
     {
-        question: "Tailwind cssda tracking nima uchun hizmat qiladi?",
-        answers: [ "word-spacing","letter spacing","font-weight","font-style"],
+        question: "Tailwind cssda border-radius qanday beriladi?",
+        answers: [ "leading","tracking","rounded","aspect-ratio"],
+        correctAnswer: 2
+    },
+    {
+        question: "Tailwind cssda grid itemlari to'gri responsive qilingan javobni belgilang(avval 1ta, keyin 2ta, oxirida 3ta).",
+        answers: [ "grid-col-1 md:grid-col-2 lg:grid-col-3","grid-col-12 md:grid-col-6 lg:grid-col-4","grid-cols-12 md:grid-cols-6 lg:grid-cols-4","grid-cols-1 md:grid-cols-2 lg:grid-cols-3"],
+        correctAnswer: 3
+    },
+    {
+        question: "Tailwind cssda width=50% qilish uchun qanday still yoziladi?",
+        answers: [ "width-50","w-50","w-2/1","w-1/2"],
+        correctAnswer: 3
+    },
+    {
+        question: "Tailwind cssda width=33% qilish uchun qanday still yoziladi?",
+        answers: [ "width-33","w-33","w-3/1","w-1/3"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagilardan qaysi biri tailwind cssda arbitrary still berish usuli hisoblanadi?",
+        answers: [ "text-red-300","text-[#555]","text-br-primary","text-transparent"],
         correctAnswer: 1
     },
     {
-        question: "Tailwind cssda border-radius qanday beriladi?",
-        answers: [ "leading","tracking","rounded","aspect-ratio"],
+        question: "Tailwind cssda width=25% qilish uchun qanday still yoziladi?",
+        answers: [ "width-25","w-25","w-4/1","w-1/4"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagilardan qaysi biri tailwind cssda opacity berishning xato usuli hisoblanadi?",
+        answers: [ "text-blue-700/70","text-blue-700[.07]","text-blue-700/[.07]","text-blue-700 opacity-70"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda harfalrni qiyshaytirib yozish uchun qanday still yoziladi?",
+        answers: [ "font-italic","fs-italic","italic","style-italic"],
         correctAnswer: 2
     },
     {
-        question: "Tailwind cssda border-radius qanday beriladi?",
-        answers: [ "leading","tracking","rounded","aspect-ratio"],
+        question: "Quyidagilardan qaysi biri tailwind cssda opacity berishning xato usuli hisoblanadi?",
+        answers: [ "text-red-600/60","text-red-600[.06]","text-red-600/[.06]","text-red-600 opacity-60"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda harfalrni qalinlashtirib yozish uchun qanday still yoziladi?",
+        answers: [ "font-bold","fs-bold","bold","style-bold"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda harfalrni qalinlashtirib yozish uchun qanday still yoziladi?",
+        answers: [ "font-bold","fs-bold","bold","style-bold"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda text-xs necha pikselga teng",
+        answers: [ "14","16","18","12"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagilardan qaysi biri tailwind cssda arbitrary still berish usuli hisoblanadi?",
+        answers: [ "text-blue-300","text-[#333]","text-br-primary","text-transparent"],
+        correctAnswer: 1
+    },
+    {
+        question: "Quyidagilardan qaysi biri tailwind cssda opacity berishning xato usuli hisoblanadi?",
+        answers: [ "text-blue-600/60","text-blue-600[.06]","text-blue-600/[.06]","text-blue-600 opacity-60"],
+        correctAnswer: 1
+    },
+    {
+        question: "Tailwind cssda text-sm necha pikselga teng",
+        answers: [ "14","16","18","12"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda ml-5 necha pikselga teng",
+        answers: [ "20","50","10","5"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda ikkita element orasiga chegara berish uchun nimadan foydalanamiz?",
+        answers: [ "outline","ring","offset","divide"],
+        correctAnswer: 3
+    },
+    {
+        question: "Tailwind cssda elementni display='none' qanday qilinadi?",
+        answers: [ "none","d-none","hidden","d-hidden"],
         correctAnswer: 2
     },
-
+    {
+        question: "Tailwind cssda text-lg necha pikselga teng",
+        answers: [ "14","16","18","12"],
+        correctAnswer: 2
+    },
+    {
+        question: "Tailwind cssda pl-5 necha pikselga teng",
+        answers: [ "20","50","10","5"],
+        correctAnswer: 0
+    },
+    {
+        question: "Tailwind cssda loading effectini berish uchun qaysi animatsiya turidan foydalanamiz",
+        answers: [ "animate-ping","animate-pulse","animate-ring","animate-spin"],
+        correctAnswer: 3
+    },
+    {
+        question: "Tailwind cssda elementlarga yuqoridan pastga tinimsiz harakat effectini berish uchun qaysi animatsiya turidan foydalanamiz",
+        answers: [ "animate-ping","animate-pulse","animate-bounce","animate-spin"],
+        correctAnswer: 2
+    },
+    {
+        question: "Tailwind cssda text-base necha pikselga teng",
+        answers: [ "14","16","18","12"],
+        correctAnswer: 1
+    },
 ]
 
 console.log(tboot.length);
