@@ -940,7 +940,7 @@ const tboot = [
         correctAnswer: 2
     },
     {
-        question: "Bootsrapda qaysi component foydalanuvchilar sahifalarni almashtirishga imkon beradi?",
+        question: "Bootsrapda qaysi component foydalanuvchilarga sahifalarni almashtirishga imkon beradi?",
         answers: [ "breadcrumb","badge","offcanvas","pagination"],
         correctAnswer: 3
     },
