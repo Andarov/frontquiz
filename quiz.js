@@ -1060,11 +1060,6 @@ const tboot = [
         correctAnswer: 0
     },
     {
-        question: "Tailwind cssda harfalrni qalinlashtirib yozish uchun qanday still yoziladi?",
-        answers: [ "font-bold","fs-bold","bold","style-bold"],
-        correctAnswer: 0
-    },
-    {
         question: "Tailwind cssda text-xs necha pikselga teng",
         answers: [ "14","16","18","12"],
         correctAnswer: 3
@@ -1125,7 +1120,5 @@ const tboot = [
         correctAnswer: 1
     },
 ]
-
-console.log(tboot.length);
 
 export { html, css, cssAdvanced, tboot }
