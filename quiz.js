@@ -1121,4 +1121,189 @@ const tboot = [
     },
 ]
 
-export { html, css, cssAdvanced, tboot }
+const jsOne = [
+    {
+        question: "Quyidagilardan qaysi biri yordamida foydalanuvchiga ogohlantirish oynasi chiqarish mumkin.",
+        answers: [ "console","alert","prompt","confirm"],
+        correctAnswer: 1
+    },
+    {
+        question: "Quyidagilardan qaysi biri yordamida foydalanuvchidan brauzerda malumot olishga mo'ljallangan dialog oynasini chiqarish uchun ishlatilamiz?",
+        answers: [ "console","alert","prompt","confirm"],
+        correctAnswer: 2
+    },
+    {
+        question: "Quyidagilardan qaysi biri yordamida foydalanuvchining amalni davom ettirishga rozilik bildirishini tekshirish mumkin?",
+        answers: [ "console","alert","prompt","confirm"],
+        correctAnswer: 3
+    },
+    {
+        question: "console.log(ism); \
+        let ism = 'Sardor'",
+        answers: [ "undefined","cannot access 'ism' before initialization","Sardor","ism is not defined"],
+        correctAnswer: 1
+    },
+    {
+        question: "let ism = 'Sardor' console.log(ism);",
+        answers: [ "undefined","cannot access 'ism' before initialization","Sardor","ism is not defined"],
+        correctAnswer: 2
+    },
+    {
+        question: "console.log(ism);",
+        answers: [ "undefined","cannot access 'ism' before initialization","Sardor","ism is not defined"],
+        correctAnswer: 3
+    },
+    {
+        question: "console.log(ism); \
+        var ism = 'Sardor'",
+        answers: [ "undefined","cannot access 'ism' before initialization","Sardor","ism is not defined"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(ism) {let ism = 'Sardor'}",
+        answers: [ "undefined", "cannot access 'ism' before initialization", "Sardor", "ism is not defined"],
+        correctAnswer: 3
+    },
+    {
+        question: "{let ism = 'Sardor'} console.log(ism)",
+        answers: [ "undefined", "cannot access 'ism' before initialization", "Sardor", "ism is not defined"],
+        correctAnswer: 3
+    },
+    {
+        question: "console.log(ism) {var ism = 'Sardor'}",
+        answers: [ "undefined","cannot access 'ism' before initialization","Sardor","ism is not defined"],
+        correctAnswer: 0
+    },
+    {
+        question: "{let ism = 'Sardor'} console.log(ism)",
+        answers: [ "undefined","cannot access 'ism' before initialization","Sardor","ism is not defined"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quyidagi variablesdan qaysi biri 'function scope' yoki 'global scope'ga mos keladi.",
+        answers: [ "var", "let", "const", "undefined"],
+        correctAnswer: 0
+    },
+    {
+        question: "Quyidagi variablesdan qaysi biri o'zgaruvchini yozgan koddan avvaldan chaqirilganda mavjud emas bo'lsa, unda unda 'undefined' qiymatini qaytaradi.",
+        answers: [ "var", "let", "const", "undefined"],
+        correctAnswer: 0
+    },
+    {
+        question: "Quyidagi variablesdan qaysi biri bir marta aniqlanganidan so'ng qiymatini o'zgartirib bo'lmaydi.",
+        answers: [ "var", "let", "const", "undefined"],
+        correctAnswer: 2
+    },
+    {
+        question: "Variablesga qanday qiymat saqlangan: let ism = 'Abbos'",
+        answers: [ "string", "boolean", "array", "undefined"],
+        correctAnswer: 0
+    },
+    {
+        question: "Variablesga qanday qiymat saqlangan: let ism = 'Asror'",
+        answers: [ "string", "boolean", "array", "undefined"],
+        correctAnswer: 0
+    },
+    {
+        question: "Variablesga qanday qiymat saqlangan: let malumot = true",
+        answers: [ "string", "boolean", "array", "undefined"],
+        correctAnswer: 1
+    },
+    {
+        question: "Variablesga qanday qiymat saqlangan: let malumot = false",
+        answers: [ "string", "boolean", "array", "undefined"],
+        correctAnswer: 1
+    },
+    {
+        question: "Variablesga qanday qiymat saqlangan: let malumot = 123",
+        answers: [ "string", "boolean", "array", "number"],
+        correctAnswer: 3
+    },
+    {
+        question: "Variablesga qanday qiymat saqlangan: let malumot = 777",
+        answers: [ "string", "boolean", "array", "number"],
+        correctAnswer: 3
+    },
+    {
+        question: "Matn - qanday data type hisoblanadi",
+        answers: [ "string", "boolean", "array", "number"],
+        correctAnswer: 0
+    },
+    {
+        question: "Son - qanday data type hisoblanadi",
+        answers: [ "string", "boolean", "array", "number"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi data type ma'lumot o'zgaruvchiga qiymat berilmaganda avtomatik ravishda tayinlanadi",
+        answers: [ "string", "boolean", "null", "undefined"],
+        correctAnswer: 3
+    },
+    {
+        question: "Stringdagi hamma harflarni bosh harfga o'tkazish uchun qaysi metoddan foydalanamiz?",
+        answers: [ "toUpperCase", "toLowerCase", "toFixed", "toString"],
+        correctAnswer: 0
+    },
+    {
+        question: "Stringdagi hamma harflarni kichik harfga o'tkazish uchun qaysi metoddan foydalanamiz?",
+        answers: [ "toUpperCase", "toLowerCase", "toFixed", "toString"],
+        correctAnswer: 1
+    },
+    {
+        question: "String ichidagi matndagi belgila uzunligi qaysi metod orqali aniqlanadi?",
+        answers: [ "length", "slice", "split", "substr"],
+        correctAnswer: 0
+    },
+    {
+        question: "let text = 'Andarov' console.log(text.slice(2))",
+        answers: [ "ndarov", "darov", "arov", "And arov"],
+        correctAnswer: 1
+    },
+    {
+        question: "let text = 'Andarov' console.log(text.slice(3))",
+        answers: [ "An da rov", "darov", "arov", "And arov"],
+        correctAnswer: 2
+    },
+    {
+        question: "let text = 'Andarov' console.log(text.slice(1, 3))",
+        answers: [ "nd", "nda", "da", "dar"],
+        correctAnswer: 0
+    },
+    {
+        question: "indexOf() metodida berilgan belgilini topa olmasa nima qaytaradi?",
+        answers: [ "null", "undefined", "-1", "0"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi string metodi matnni berilgan indeks(lar) oraliqida kesadi?",
+        answers: [ "slice", "split", "length", "concat"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi string metodi matnda berilgan bir belgi boshqa bir belgi bilan almashtiradi?",
+        answers: [ "replace", "replaceAll", "slice", "splice"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi string metodi matnni boshqa matnlar bilan bir-biriga qo'shadi?",
+        answers: [ "replace", "concat", "slice", "splice"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi string metodi matnda berilgan belgi bor yoki yo'q tekshiradi. True yoki false qaytaradi?",
+        answers: [ "replace", "concat", "includes", "indexOf"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi string metodi matn boshida va oxiridagi bo'sh joylarni olib tashlaydi?",
+        answers: [ "trim", "concat", "includes", "indexOf"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi string metodi matnni berilgan belgiga ko'ra bo'lib ko'rsatadi va ushbu belgi chiqmaydi. Qaytarilgan qiymatlar massiv shaklida keladi?",
+        answers: [ "trim", "slice", "split", "repeat"],
+        correctAnswer: 2
+    },
+]
+
+export { html, css, cssAdvanced, tboot, jsOne }

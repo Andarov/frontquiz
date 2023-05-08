@@ -1,5 +1,4 @@
-import { html, css, cssAdvanced, tboot } from './quiz.js';
-
+import { html, css, cssAdvanced, tboot, jsOne } from './quiz.js';
 let number = document.querySelector('#number');
 let currentQuestion = 0;
 let score = 0;
@@ -77,6 +76,7 @@ const htmlBtn = document.querySelector('.html-btn');
 const cssBtn = document.querySelector('.css-btn');
 const cssAdvancedBtn = document.querySelector('.css-advanced');
 const tBoot = document.querySelector('.tboot-btn');
+const jsBoot = document.querySelector('.js-btn');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
@@ -116,6 +116,14 @@ if(tBoot){
   tBoot.addEventListener('click', function() {
     tBoot.classList.add('none');
     questions = getRandomQuestions(tboot);
+    startQuiz()
+  });
+}
+
+if(jsBoot){
+  jsBoot.addEventListener('click', function() {
+    jsBoot.classList.add('none');
+    questions = getRandomQuestions(jsOne);
     startQuiz()
   });
 }
