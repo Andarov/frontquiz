@@ -1304,6 +1304,51 @@ const jsOne = [
         answers: [ "trim", "slice", "split", "repeat"],
         correctAnswer: 2
     },
+    {
+        question: "Qaysi array metodi massivdagi shartga javob beruvchi elementlar ro'yxatini qaytaradi?",
+        answers: [ "forEach", "filter", "map", "sort"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi array metodi massivni tartiblash uchun ishlatiladi va elementlar asosida natijalar ro'yxatini qaytaradi?",
+        answers: [ "forEach", "filter", "map", "sort"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi array metodi massivdagi birinchi elementni topish uchun ishlatiladi, shartga javob beruvchi birinchi elementni qaytaradi?",
+        answers: [ "forEach", "filter", "map", "find"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qaysi array metodi massivdagi har bir elementni o'zgartirib, yangi ro'yxatni qaytaradi?",
+        answers: [ "forEach", "filter", "map", "find"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi array metodi massivning elementlar sonini qaytaradi?",
+        answers: [ "length", "pop", "push", "shift"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi array metodi massivning oxirgi elementini olib tashlaydi va uning qiymatini qaytarad?",
+        answers: [ "length", "pop", "push", "shift"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi array metodi massivning oxiriga yangi element(qolgan elementlardan keyingisiga) qo'shadi?",
+        answers: [ "length", "pop", "push", "shift"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi array metodi massivning boshiga yangi element(lar)ni qo'shadi. Massivning uzunligi o'zgaradi va yangi elementlar bir o'rindi pastga ko'chiriladi?",
+        answers: [ "unshift", "pop", "push", "shift"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi array metodi massivning boshidagi (birinchi) elementni olib tashlayadi va uning qiymatini qaytaradi. Massivning uzunligi va qolgan elementlar bir o'rindi yuqoriga ko'chiriladi?",
+        answers: [ "unshift", "pop", "push", "shift"],
+        correctAnswer: 3
+    },
 ]
 
 export { html, css, cssAdvanced, tboot, jsOne }
