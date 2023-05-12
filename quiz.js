@@ -1349,6 +1349,66 @@ const jsOne = [
         answers: [ "unshift", "pop", "push", "shift"],
         correctAnswer: 3
     },
+    {
+        question: "const raqam = 3.3; console.log(raqam.toFixed(3));",
+        answers: [ "3", "3.300", "3.3000", "3.3"],
+        correctAnswer: 1
+    },
+    {
+        question: "const raqam = 3; console.log(raqam.toString() + 1);",
+        answers: [ "31", "4", "NaN", "-1"],
+        correctAnswer: 0
+    },
+    {
+        question: "const raqam = 3; console.log(isNaN(raqam));",
+        answers: [ "true", "false", "NaN", "-1"],
+        correctAnswer: 1
+    },
+    {
+        question: "const raqam = '3'; console.log(isNaN(raqam));",
+        answers: [ "true", "false", "NaN", "-1"],
+        correctAnswer: 1
+    },
+    {
+        question: "const raqam = 'a'; console.log(isNaN(raqam));",
+        answers: [ "true", "false", "NaN", "-1"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(Math.abs(-5))",
+        answers: [ "5", "-5", "25", "-25"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(Math.abs(5))",
+        answers: [ "5", "-5", "25", "-25"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(Math.floor(4.8))",
+        answers: [ "4", "5", "32", "-32"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(Math.trunc(4.8))",
+        answers: [ "4", "5", "32", "-32"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(Math.ceil(4.3))",
+        answers: [ "4", "5", "32", "-32"],
+        correctAnswer: 1
+    },
+    {
+        question: "console.log(Math.round(4.3))",
+        answers: [ "4", "5", "32", "-32"],
+        correctAnswer: 0
+    },
+    {
+        question: "100gacha bo'lgan raqamlardan random qiling.",
+        answers: [ "console.log(Math.trunc(Math.random()*100)+1)", "console.log(Math.trunc(Math.random()*100))", "console.log(Math.trunc(Math.random(*100)))", "console.log(Math.trunc(Math.random(*100)+1))"],
+        correctAnswer: 0
+    },
 ]
-
+console.log(jsOne.length);
 export { html, css, cssAdvanced, tboot, jsOne }
