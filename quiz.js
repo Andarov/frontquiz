@@ -1409,6 +1409,76 @@ const jsOne = [
         answers: [ "console.log(Math.trunc(Math.random()*100)+1)", "console.log(Math.trunc(Math.random()*100))", "console.log(Math.trunc(Math.random(*100)))", "console.log(Math.trunc(Math.random(*100)+1))"],
         correctAnswer: 0
     },
+    {
+        question: "let raqam = 3; console.log(raqam === 3)",
+        answers: [ "true", "false", "-3", "3"],
+        correctAnswer: 0
+    },
+    {
+        question: "let raqam = 3; console.log(raqam === '3')",
+        answers: [ "true", "false", "-3", "3"],
+        correctAnswer: 1
+    },
+    {
+        question: "let raqam = 312; console.log(raqam == '312')",
+        answers: [ "true", "false", "-3", "3"],
+        correctAnswer: 0
+    },
+    {
+        question: "let raqam = 312; console.log(raqam === '312')",
+        answers: [ "true", "false", "-3", "3"],
+        correctAnswer: 1
+    },
+    {
+        question: "let raqam = 3; console.log(raqam++)",
+        answers: [ "3", "6", "9", "4"],
+        correctAnswer: 0
+    },
+    {
+        question: "let raqam = 3; console.log(raqam--)",
+        answers: [ "3", "6", "9", "2"],
+        correctAnswer: 0
+    },
+    {
+        question: "Javascriptdagi ** operatori qaysi Math metodiga o'xshaydi?",
+        answers: [ "pow", "abs", "ceil", "max"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(true || false || true)",
+        answers: [ "true", "false", "null", "NaN"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(true && false && true)",
+        answers: [ "true", "false", "null", "NaN"],
+        correctAnswer: 1
+    },
+    {
+        question: "console.log(112%10)",
+        answers: [ "12", "10", "2", "110"],
+        correctAnswer: 2
+    },
+    {
+        question: "console.log(112%2)",
+        answers: [ "12", "0", "2", "110"],
+        correctAnswer: 1
+    },
+    {
+        question: "console.log(13%2)",
+        answers: [ "1", "0", "2", "6"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(6!=5)",
+        answers: [ "true", "false", "6", "5"],
+        correctAnswer: 0
+    },
+    {
+        question: "console.log(6!=6)",
+        answers: [ "true", "false", "6", "5"],
+        correctAnswer: 1
+    }
 ]
 console.log(jsOne.length);
 export { html, css, cssAdvanced, tboot, jsOne }
