@@ -1480,5 +1480,5 @@ const jsOne = [
         correctAnswer: 1
     }
 ]
-console.log(jsOne.length);
+
 export { html, css, cssAdvanced, tboot, jsOne }

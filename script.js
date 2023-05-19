@@ -5,6 +5,20 @@ let score = 0;
   
 const questionElement = document.getElementById('question');
 const answersElement = document.getElementById('answers');
+const htmlTotal = document.querySelector('#html-total');
+const cssTotal = document.querySelector('#css-total');
+const cssAdvancedTotal = document.querySelector('#css-advanced-total');
+const tBootTotal = document.querySelector('#tboot-total');
+const jsOneTotal = document.querySelector('#js-one-total');
+const totalNumber = document.querySelector('#total-number');
+
+htmlTotal.textContent = `${html.length}ta savol mavjud`;
+cssTotal.textContent = `${css.length}ta savol mavjud`;
+cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
+tBootTotal.textContent = `${tboot.length}ta savol mavjud`;
+jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
+
+totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length;
 
 function showQuestion(question) {
   questionElement.textContent = question.question;
