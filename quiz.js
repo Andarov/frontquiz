@@ -1478,6 +1478,76 @@ const jsOne = [
         question: "console.log(6!=6)",
         answers: [ "true", "false", "6", "5"],
         correctAnswer: 1
+    },
+    {
+        question: "true + false",
+        answers: [ "truefalse", "1", "NaN", "SytaxtError"],
+        correctAnswer: 1
+    },
+    {
+        question: "[,,,].length",
+        answers: [ "0", "3", "4", "SytaxtError"],
+        correctAnswer: 1
+    },
+    {
+        question: "[1,2,3] + [4,5,6]",
+        answers: [ "123456", "1,2,34,5,6", "1,2,3,4,5,6", "NaN"],
+        correctAnswer: 1
+    },
+    {
+        question: "0.2+0.1 === 0.3",
+        answers: [ "true", "false", "NaN", "SytaxtError"],
+        correctAnswer: 1
+    },
+    {
+        question: "true === 'true",
+        answers: [ "true", "false", "undefined", "SytaxtError"],
+        correctAnswer: 1
+    },
+    {
+        question: "null + 0",
+        answers: [ "0", "1", "NaN", "SytaxtError"],
+        correctAnswer: 0
+    },
+    {
+        question: "0/0",
+        answers: [ "0", "Infinty", "NaN", "SytaxtError"],
+        correctAnswer: 2
+    },
+    {
+        question: "true++",
+        answers: [ "1", "2", "NaN", "SytaxtError"],
+        correctAnswer: 3
+    },
+    {
+        question: "'' - 1",
+        answers: [ "1", "-1", "-1", "NaN"],
+        correctAnswer: 2
+    },
+    {
+        question: "(null - 0) + 0",
+        answers: [ "'null0'", "'00'", "0", "NaN"],
+        correctAnswer: 1
+    },
+    {
+        question: "true + ('true' - 0)",
+        answers: [ "1", "2", "SytaxtError", "NaN"],
+        correctAnswer: 3
+    },
+    {
+        question: "[] + []",
+        answers: [ "[]", "[,]", "''", "NaN"],
+        correctAnswer: 2
+    },
+    {
+        question: "1+2+'3'",
+        answers: [ "6", "'123'", "'33'", "NaN"],
+        correctAnswer: 2
+    },
+    {
+        question: "typeof NaN",
+        answers: [ "number", "undefined", "object", "NaN"],
+        correctAnswer: 0
     }
 ]
 

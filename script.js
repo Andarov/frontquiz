@@ -12,13 +12,15 @@ const tBootTotal = document.querySelector('#tboot-total');
 const jsOneTotal = document.querySelector('#js-one-total');
 const totalNumber = document.querySelector('#total-number');
 
-htmlTotal.textContent = `${html.length}ta savol mavjud`;
-cssTotal.textContent = `${css.length}ta savol mavjud`;
-cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
-tBootTotal.textContent = `${tboot.length}ta savol mavjud`;
-jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
+if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal){
+  htmlTotal.textContent = `${html.length}ta savol mavjud`;
+  cssTotal.textContent = `${css.length}ta savol mavjud`;
+  cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
+  tBootTotal.textContent = `${tboot.length}ta savol mavjud`;
+  jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
+  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length;
+}
 
-totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length;
 
 function showQuestion(question) {
   questionElement.textContent = question.question;
@@ -90,7 +92,7 @@ const htmlBtn = document.querySelector('.html-btn');
 const cssBtn = document.querySelector('.css-btn');
 const cssAdvancedBtn = document.querySelector('.css-advanced');
 const tBoot = document.querySelector('.tboot-btn');
-const jsBoot = document.querySelector('.js-btn');
+const jsBtn = document.querySelector('.js-btn');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
@@ -134,9 +136,10 @@ if(tBoot){
   });
 }
 
-if(jsBoot){
-  jsBoot.addEventListener('click', function() {
-    jsBoot.classList.add('none');
+if(jsBtn){
+  jsBtn.addEventListener('click', function() {
+    console.log('salom');
+    jsBtn.classList.add('none');
     questions = getRandomQuestions(jsOne);
     startQuiz()
   });
