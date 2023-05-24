@@ -1520,12 +1520,12 @@ const jsOne = [
         correctAnswer: 3
     },
     {
-        question: "'' - 1",
-        answers: [ "1", "-1", "-1", "NaN"],
-        correctAnswer: 2
+        question: "' ' - 1",
+        answers: [ "1", "-1", "'-1'", "NaN"],
+        correctAnswer: 2 
     },
     {
-        question: "(null - 0) + 0",
+        question: "(null - 0) + '0'",
         answers: [ "'null0'", "'00'", "0", "NaN"],
         correctAnswer: 1
     },
@@ -1535,8 +1535,8 @@ const jsOne = [
         correctAnswer: 3
     },
     {
-        question: "[] + []",
-        answers: [ "[]", "[,]", "''", "NaN"],
+        question: "[ ] + [ ]",
+        answers: [ "[ ]", "[,]", "''", "NaN"],
         correctAnswer: 2
     },
     {
