@@ -1553,10 +1553,75 @@ const jsOne = [
 
 const jsTwo = [
     {
-        question: "Quyidagilardan qaysi biri yordamida foydalanuvchiga ogohlantirish oynasi chiqarish mumkin.",
-        answers: [ "console","alert","prompt","confirm"],
+        question: "Agar getElementById bilan tanlangan element topilsa, u nima qaytaradi?",
+        answers: [ "ushbu element ob'ektini","HTMLCollection","NodeList","ushbu element textContentini"],
+        correctAnswer: 0
+    },
+    {
+        question: "Agar getElementById bilan tanlangan element topilmasa, u nima qaytaradi?",
+        answers: [ "undefined","null","bo'sh NodeList","bo'sh HTMLCollection"],
         correctAnswer: 1
+    },
+    {
+        question: "Agar getElementsByClassName bilan tanlangan element topilsa, u nima qaytaradi?",
+        answers: [ "ushbu element ob'ektini","HTMLCollection","NodeList","ushbu element textContentini"],
+        correctAnswer: 1
+    },
+    {
+        question: "Agar getElementsByClassName bilan tanlangan element topilmasa, u nima qaytaradi?",
+        answers: [ "undefined","null","bo'sh NodeList","bo'sh HTMLCollection"],
+        correctAnswer: 3
+    },
+    {
+        question: "Agar getElementsByTagName bilan tanlangan element topilsa, u nima qaytaradi?",
+        answers: [ "ushbu element ob'ektini","HTMLCollection","NodeList","ushbu element textContentini"],
+        correctAnswer: 1
+    },
+    {
+        question: "Agar getElementsByTagName bilan tanlangan element topilmasa, u nima qaytaradi?",
+        answers: [ "undefined","null","bo'sh NodeList","bo'sh HTMLCollection"],
+        correctAnswer: 3
+    },
+    {
+        question: "Agar querySelector bilan tanlangan element topilsa, u nima qaytaradi?",
+        answers: [ "ushbu element ob'ektini","HTMLCollection","NodeList","ushbu element textContentini"],
+        correctAnswer: 0
+    },
+    {
+        question: "Agar querySelector bilan tanlangan element topilmasa, u nima qaytaradi?",
+        answers: [ "undefined","null","bo'sh NodeList","bo'sh HTMLCollection"],
+        correctAnswer: 1
+    },
+    {
+        question: "Agar querySelectorAll bilan tanlangan element topilsa, u nima qaytaradi?",
+        answers: [ "ushbu element ob'ektini","HTMLCollection","NodeList","ushbu element textContentini"],
+        correctAnswer: 2
+    },
+    {
+        question: "Agar querySelectorAll bilan tanlangan element topilmasa, u nima qaytaradi?",
+        answers: [ "undefined","null","bo'sh NodeList","bo'sh HTMLCollection"],
+        correctAnswer: 2
     },
 ]
 
 export { html, css, cssAdvanced, tboot, jsOne, jsTwo }
+
+
+// const result = document.getElementById('number');
+const result = document.getElementsByClassName('btn');
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

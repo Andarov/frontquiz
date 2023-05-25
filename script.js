@@ -20,7 +20,7 @@ if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal){
   tBootTotal.textContent = `${tboot.length}ta savol mavjud`;
   jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
   jsTwoTotal.textContent = `${jsTwo.length}ta savol mavjud`;
-  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length;
+  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length+jsTwo.length;
 }
 
 
