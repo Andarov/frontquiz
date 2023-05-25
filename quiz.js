@@ -1277,7 +1277,7 @@ const jsOne = [
     {
         question: "Qaysi string metodi matnni berilgan indeks(lar) oraliqida kesadi?",
         answers: [ "slice", "split", "length", "concat"],
-        correctAnswer: 2
+        correctAnswer: 0
     },
     {
         question: "Qaysi string metodi matnda berilgan bir belgi boshqa bir belgi bilan almashtiradi?",
@@ -1551,4 +1551,12 @@ const jsOne = [
     }
 ]
 
-export { html, css, cssAdvanced, tboot, jsOne }
+const jsTwo = [
+    {
+        question: "Quyidagilardan qaysi biri yordamida foydalanuvchiga ogohlantirish oynasi chiqarish mumkin.",
+        answers: [ "console","alert","prompt","confirm"],
+        correctAnswer: 1
+    },
+]
+
+export { html, css, cssAdvanced, tboot, jsOne, jsTwo }

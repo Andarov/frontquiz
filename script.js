@@ -1,4 +1,4 @@
-import { html, css, cssAdvanced, tboot, jsOne } from './quiz.js';
+import { html, css, cssAdvanced, tboot, jsOne, jsTwo } from './quiz.js';
 let number = document.querySelector('#number');
 let currentQuestion = 0;
 let score = 0;
@@ -10,14 +10,16 @@ const cssTotal = document.querySelector('#css-total');
 const cssAdvancedTotal = document.querySelector('#css-advanced-total');
 const tBootTotal = document.querySelector('#tboot-total');
 const jsOneTotal = document.querySelector('#js-one-total');
+const jsTwoTotal = document.querySelector('#js-two-total');
 const totalNumber = document.querySelector('#total-number');
 
-if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal){
+if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal){
   htmlTotal.textContent = `${html.length}ta savol mavjud`;
   cssTotal.textContent = `${css.length}ta savol mavjud`;
   cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
   tBootTotal.textContent = `${tboot.length}ta savol mavjud`;
   jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
+  jsTwoTotal.textContent = `${jsTwo.length}ta savol mavjud`;
   totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length;
 }
 
@@ -92,7 +94,8 @@ const htmlBtn = document.querySelector('.html-btn');
 const cssBtn = document.querySelector('.css-btn');
 const cssAdvancedBtn = document.querySelector('.css-advanced');
 const tBoot = document.querySelector('.tboot-btn');
-const jsBtn = document.querySelector('.js-btn');
+const jsOneBtn = document.querySelector('.js-btn');
+const jsTwoBtn = document.querySelector('.js-two-btn');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
@@ -136,11 +139,18 @@ if(tBoot){
   });
 }
 
-if(jsBtn){
-  jsBtn.addEventListener('click', function() {
-    console.log('salom');
-    jsBtn.classList.add('none');
+if(jsOneBtn){
+  jsOneBtn.addEventListener('click', function() {
+    jsOneBtn.classList.add('none');
     questions = getRandomQuestions(jsOne);
+    startQuiz()
+  });
+}
+
+if(jsTwoBtn){
+  jsTwoBtn.addEventListener('click', function() {
+    jsTwoBtn.classList.add('none');
+    questions = getRandomQuestions(jsTwo);
     startQuiz()
   });
 }
