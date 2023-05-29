@@ -1644,8 +1644,6 @@ const jsTwo = [
     },
 ]
 
-const bola = document.querySelector('.bola')
-bola.nextElementSibling
 
 
 export { html, css, cssAdvanced, tboot, jsOne, jsTwo }
