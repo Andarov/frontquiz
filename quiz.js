@@ -1602,15 +1602,53 @@ const jsTwo = [
         answers: [ "undefined","null","bo'sh NodeList","bo'sh HTMLCollection"],
         correctAnswer: 2
     },
+    {
+        question: "Qaysi holatda id='element' to'g'ri tanlab olingan?",
+        answers: [ "document.getElementById('#element')","document.querySelector('#element')","document.querySelector('element')","document.getElementsByTagName('#element')"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi holatda id='element' to'g'ri tanlab olingan?",
+        answers: [ "document.getElementById('#element')","document.getElementById('element')","document.querySelector('element')","document.getElementsByTagName('#element')"],
+        correctAnswer: 1
+    },
+    {
+        question: "Qaysi holatda class='element' to'g'ri tanlab olingan?",
+        answers: [ "document.getElementById('#element')","document.getElementById('element')","document.querySelector('.element')","document.getElementsByTagName('.element')"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi holatda class='element' to'g'ri tanlab olingan?",
+        answers: [ "document.getElementsByClassName('.element')","document.getElementById('element')","document.querySelector('.element')","document.getElementsByTagName('.element')"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qanday qilib elementni ota elementini tanlab olish mumkin?",
+        answers: [ "ele.parentContainer","ele.getParent","ele.parent","ele.parentElement"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qanday qilib elementni ota elementini hamma bola elementlarini tanlab olish mumkin?",
+        answers: [ "ele.childrenContainer","ele.getChildren","ele.children","ele.childrenElements"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qanday qilib elementdan bitta oldingi elementni tanlab olish mumkin?",
+        answers: [ "ele.previousElement","ele.getpreviousElement","ele.previousElementSibling","ele.prevElement"],
+        correctAnswer: 2
+    },
+    {
+        question: "Qanday qilib elementdan bitta keyingi elementni tanlab olish mumkin?",
+        answers: [ "ele.nextElement","ele.getnextElement","ele.nextElementSibling","ele.nextElement"],
+        correctAnswer: 2
+    },
 ]
 
+const bola = document.querySelector('.bola')
+bola.nextElementSibling
+
+
 export { html, css, cssAdvanced, tboot, jsOne, jsTwo }
-
-
-// const result = document.getElementById('number');
-const result = document.getElementsByClassName('btn');
-
-console.log(result);
 
 
 
