@@ -27,31 +27,31 @@ body {
 
 
 /* Top */
-.top {
+.hero {
   background-color: #211967;
   color: #fff;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.top-container {
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.top-title {
+.hero-title {
   margin-bottom: 24px;  
   font-size: 64px;
   font-family: 'Coolvetica', sans-serif;
 }
 
-.top-title-mark {
+.hero-title-mark {
   color: rgb(249, 245, 6);
 }
 
-.top-text {
+.hero-text {
   max-width: 800px;
   text-align: center;
   font-size: 24px;
@@ -69,7 +69,7 @@ body {
   margin-bottom: 12px;
 }
 
-.top-text-success {
+.hero-text-success {
   font-size: 28px;
   line-height: 32px;
   font-family: 'Cabin', sans-serif;
