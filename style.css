@@ -447,4 +447,7 @@ main {
     width: 100%;
     border-collapse: collapse;
   }
+  .list-item-title {
+    font-size: 18px;
+  }
 }
