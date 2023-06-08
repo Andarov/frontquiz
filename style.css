@@ -450,4 +450,7 @@ main {
   .list-item-title {
     font-size: 18px;
   }
+  .total-number{
+    font-size: 22px;
+  }
 }
