@@ -1121,7 +1121,7 @@ const tboot = [
     },
 ]
 
-const jsOne = [
+const jsBasic = [
     {
         question: "Quyidagilardan qaysi biri yordamida foydalanuvchiga ogohlantirish oynasi chiqarish mumkin.",
         answers: [ "console","alert","prompt","confirm"],
@@ -1500,7 +1500,7 @@ const jsOne = [
         correctAnswer: 1
     },
     {
-        question: "true === 'true",
+        question: "true === 'true'",
         answers: [ "true", "false", "undefined", "SytaxtError"],
         correctAnswer: 1
     },
@@ -1762,6 +1762,7 @@ const jsAsync = [
         correctAnswer: 1
     },
 ]
+
 const jsObject = [
     {
         question: `
@@ -2037,7 +2038,7 @@ const jsObject = [
     },
 ]
 
-export { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync, jsObject }
+export { html, css, cssAdvanced, tboot, jsBasic, jsTwo, jsAsync, jsObject }
 
 
 
