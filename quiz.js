@@ -1644,9 +1644,128 @@ const jsTwo = [
     },
 ]
 
+const jsAsync = [
+    {
+        question: `
+            console.log(1);
+            setTimeout(()=>{
+                console.log(2);
+            }, 0);
+            console.log(3);
+        `,
+        answers: [ "1,3,2","1,2,3","3,2,1","2,1,3"],
+        correctAnswer: 0
+    },
+    {
+        question: `
+            console.log(1);
+            setTimeout(()=>{
+                console.log(2);
+            }, 1000)
+            console.log(3);
+        `,
+        answers: [ "1,3,2","1,2,3","3,2,1","2,1,3"],
+        correctAnswer: 0
+    },
+    {
+        question: `
+            console.log(1);
+            setTimeout(()=>{
+                console.log(2);
+            }, 2000)
+            console.log(3);
+            setTimeout(()=>{
+                console.log(4);
+            }, 0)
+        `,
+        answers: [ "1,2,3,4","1,3,4,2","1,3,2,4","2,4,1,3"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            setTimeout(()=>{
+                console.log(1);
+            }, 0)
+            console.log(2);
+            console.log(3);
+            console.log(4);
+        `,
+        answers: [ "1,2,3,4","2,3,4,1","2,1,3,4","2,4,1,3"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            setTimeout(()=>{
+                console.log(1);
+            }, 0)
+            for (let i = 0; i < 1000; i++) {
+                console.log(2);
+            }
+            console.log(3);
+            console.log(4);
+        `,
+        answers: [ "1,2,3,4","2,3,4,1","2,1,3,4","3,4,1,2"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            setTimeout(()=>{
+                console.log(1);
+            }, 0)
+            console.log(2);
+            for (let i = 0; i < 10; i++) {
+                console.log(3);
+            }
+            console.log(4);
+        `,
+        answers: [ "1,2,3,4","2,3,4,1","2,4,3,1","3,4,1,2"],
+        correctAnswer: 1
+    },
+    {
+        question: `Qanday qilib consolega har sekundda 1 sonini chiqarishimiz mumkin?`,
+        answers: [
+            `console.log(1)`, 
+            `setInterval(()=>{
+                console.log(1);
+            }, 1)`,
+            `setInterval(()=>{
+                console.log(1);
+            }, 60`,
+            `setInterval(()=>{
+                console.log(1);
+            }, 1000)`
+    ],
+        correctAnswer: 3
+    },
+    {
+        question: "Intervalli taymerni to'xtatish funktsiyasi qaysi?",
+        answers: ['stopTimer', 'stopInterval', 'clearInterval', 'shutDownInterval'
+    ],
+        correctAnswer: 2
+    },
+    {
+        question: "Qaysi javascript metodi Promiseni muvaffaqiyatli yakunlaganida (fulfilled) ishga tushiriladi?",
+        answers: ['then()', 'catch()', 'try()', 'success()'
+    ],
+        correctAnswer: 0
+    },
+    {
+        question: "Qaysi javascript metodi Promiseni xato (rejected) holatda ishga tushiriladi?",
+        answers: ['then()', 'catch()', 'error()', 'success()'
+    ],
+        correctAnswer: 1
+    },
+    {
+        question: "JavaScript dasturlashda kodning qiyinchilik yuzaga kelishi va boshqarilishi qiyin bo'lgan holat nima deb nomlanadi?",
+        answers: ['hell', 'function hell', 'error hell', 'callback hell'
+    ],
+        correctAnswer: 1
+    },
+]
+
+export { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync }
 
 
-export { html, css, cssAdvanced, tboot, jsOne, jsTwo }
 
 
 

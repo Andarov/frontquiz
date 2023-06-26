@@ -1,4 +1,4 @@
-import { html, css, cssAdvanced, tboot, jsOne, jsTwo } from './quiz.js';
+import { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync } from './quiz.js';
 let number = document.querySelector('#number');
 let currentQuestion = 0;
 let score = 0;
@@ -11,16 +11,18 @@ const cssAdvancedTotal = document.querySelector('#css-advanced-total');
 const tBootTotal = document.querySelector('#tboot-total');
 const jsOneTotal = document.querySelector('#js-one-total');
 const jsTwoTotal = document.querySelector('#js-two-total');
+const jsAsyncTotal = document.querySelector('#js-async-total');
 const totalNumber = document.querySelector('#total-number');
 
-if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal){
+if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal, jsAsyncTotal){
   htmlTotal.textContent = `${html.length}ta savol mavjud`;
   cssTotal.textContent = `${css.length}ta savol mavjud`;
   cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
   tBootTotal.textContent = `${tboot.length}ta savol mavjud`;
   jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
   jsTwoTotal.textContent = `${jsTwo.length}ta savol mavjud`;
-  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length+jsTwo.length;
+  jsAsyncTotal.textContent = `${jsAsync.length}ta savol mavjud`;
+  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length+jsTwo.length+jsAsync.length;
 }
 
 
@@ -96,6 +98,7 @@ const cssAdvancedBtn = document.querySelector('.css-advanced');
 const tBoot = document.querySelector('.tboot-btn');
 const jsOneBtn = document.querySelector('.js-btn');
 const jsTwoBtn = document.querySelector('.js-two-btn');
+const jsAsyncBtn = document.querySelector('.js-async-btn');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
@@ -151,6 +154,14 @@ if(jsTwoBtn){
   jsTwoBtn.addEventListener('click', function() {
     jsTwoBtn.classList.add('none');
     questions = getRandomQuestions(jsTwo);
+    startQuiz()
+  });
+}
+
+if(jsAsyncBtn){
+  jsAsyncBtn.addEventListener('click', function() {
+    jsAsyncBtn.classList.add('none');
+    questions = getRandomQuestions(jsAsync);
     startQuiz()
   });
 }
