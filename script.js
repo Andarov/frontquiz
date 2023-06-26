@@ -8,6 +8,8 @@ import {
   jsAsync,
   jsObject,
 } from "./quiz.js";
+let jsGeneral = [...jsBasic, ...jsDom, ...jsAsync, ...jsObject];
+
 let number = document.querySelector("#number");
 let currentQuestion = 0;
 let score = 0;
@@ -22,6 +24,7 @@ const jsBasicTotal = document.querySelector("#js-basic-total");
 const jsDomTotal = document.querySelector("#js-dom-total");
 const jsAsyncTotal = document.querySelector("#js-async-total");
 const jsObjectTotal = document.querySelector("#js-object-total");
+const jsGeneralTotal = document.querySelector("#js-general-total");
 const totalNumber = document.querySelector("#total-number");
 
 if (
@@ -32,7 +35,8 @@ if (
   jsBasicTotal,
   jsDomTotal,
   jsAsyncTotal,
-  jsObjectTotal)
+  jsObjectTotal,
+  jsGeneralTotal)
 ) {
   htmlTotal.textContent = `${html.length}ta savol mavjud`;
   cssTotal.textContent = `${css.length}ta savol mavjud`;
@@ -42,6 +46,7 @@ if (
   jsDomTotal.textContent = `${jsDom.length}ta savol mavjud`;
   jsAsyncTotal.textContent = `${jsAsync.length}ta savol mavjud`;
   jsObjectTotal.textContent = `${jsObject.length}ta savol mavjud`;
+  jsGeneralTotal.textContent = `${jsGeneral.length}ta savol mavjud`;
   totalNumber.textContent =
     html.length +
     css.length +
@@ -129,6 +134,7 @@ const jsBasicBtn = document.querySelector(".js-basic");
 const jsDomBtn = document.querySelector(".js-dom-btn");
 const jsAsyncBtn = document.querySelector(".js-async-btn");
 const jsObjectBtn = document.querySelector(".js-object-btn");
+const jsGeneralBtn = document.querySelector(".js-general-btn");
 const mainWrapper = document.querySelector(".main-wrapper");
 const result = document.querySelector("#result");
 
@@ -141,36 +147,39 @@ const startQuiz = function () {
 };
 
 // show questions when click btns
-const btnClickShowQuestions = (btn, arr)=>{
+const btnClickShowQuestions = (btn, arr) => {
   btn.addEventListener("click", function () {
     btn.classList.add("none");
     questions = getRandomQuestions(arr);
     startQuiz();
   });
-}
+};
 if (htmlBtn) {
-  btnClickShowQuestions(htmlBtn, html)
+  btnClickShowQuestions(htmlBtn, html);
 }
 if (cssBtn) {
-  btnClickShowQuestions(cssBtn, css)
+  btnClickShowQuestions(cssBtn, css);
 }
 if (cssAdvancedBtn) {
-  btnClickShowQuestions(cssAdvancedBtn, cssAdvanced)
+  btnClickShowQuestions(cssAdvancedBtn, cssAdvanced);
 }
 if (tBoot) {
-  btnClickShowQuestions(tBoot, tboot)
+  btnClickShowQuestions(tBoot, tboot);
 }
 if (jsBasicBtn) {
-  btnClickShowQuestions(jsBasicBtn, jsBasic)
+  btnClickShowQuestions(jsBasicBtn, jsBasic);
 }
 if (jsDomBtn) {
-  btnClickShowQuestions(jsDomBtn, jsDom)
+  btnClickShowQuestions(jsDomBtn, jsDom);
 }
 if (jsAsyncBtn) {
-  btnClickShowQuestions(jsAsyncBtn, jsAsync)
+  btnClickShowQuestions(jsAsyncBtn, jsAsync);
 }
 if (jsObjectBtn) {
-  btnClickShowQuestions(jsObjectBtn, jsObject)
+  btnClickShowQuestions(jsObjectBtn, jsObject);
+}
+if (jsGeneralBtn) {
+  btnClickShowQuestions(jsGeneralBtn, jsGeneral);
 }
 
 // Step next question
