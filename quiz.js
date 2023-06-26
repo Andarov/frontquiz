@@ -1551,7 +1551,7 @@ const jsBasic = [
     }
 ]
 
-const jsTwo = [
+const jsDom = [
     {
         question: "Agar getElementById bilan tanlangan element topilsa, u nima qaytaradi?",
         answers: [ "ushbu element ob'ektini","HTMLCollection","NodeList","ushbu element textContentini"],
@@ -2038,7 +2038,7 @@ const jsObject = [
     },
 ]
 
-export { html, css, cssAdvanced, tboot, jsBasic, jsTwo, jsAsync, jsObject }
+export { html, css, cssAdvanced, tboot, jsBasic, jsDom, jsAsync, jsObject }
 
 
 
