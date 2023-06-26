@@ -1,21 +1,39 @@
-import { html, css, cssAdvanced, tboot, jsBasic, jsDom, jsAsync, jsObject} from './quiz.js';
-let number = document.querySelector('#number');
+import {
+  html,
+  css,
+  cssAdvanced,
+  tboot,
+  jsBasic,
+  jsDom,
+  jsAsync,
+  jsObject,
+} from "./quiz.js";
+let number = document.querySelector("#number");
 let currentQuestion = 0;
 let score = 0;
-  
-const questionElement = document.getElementById('question');
-const answersElement = document.getElementById('answers');
-const htmlTotal = document.querySelector('#html-total');
-const cssTotal = document.querySelector('#css-total');
-const cssAdvancedTotal = document.querySelector('#css-advanced-total');
-const tBootTotal = document.querySelector('#tboot-total');
-const jsBasicTotal = document.querySelector('#js-basic-total');
-const jsDomTotal = document.querySelector('#js-dom-total');
-const jsAsyncTotal = document.querySelector('#js-async-total');
-const jsObjectTotal = document.querySelector('#js-object-total');
-const totalNumber = document.querySelector('#total-number');
 
-if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsBasicTotal, jsDomTotal, jsAsyncTotal, jsObjectTotal){
+const questionElement = document.getElementById("question");
+const answersElement = document.getElementById("answers");
+const htmlTotal = document.querySelector("#html-total");
+const cssTotal = document.querySelector("#css-total");
+const cssAdvancedTotal = document.querySelector("#css-advanced-total");
+const tBootTotal = document.querySelector("#tboot-total");
+const jsBasicTotal = document.querySelector("#js-basic-total");
+const jsDomTotal = document.querySelector("#js-dom-total");
+const jsAsyncTotal = document.querySelector("#js-async-total");
+const jsObjectTotal = document.querySelector("#js-object-total");
+const totalNumber = document.querySelector("#total-number");
+
+if (
+  (htmlTotal,
+  cssTotal,
+  cssAdvancedTotal,
+  tBootTotal,
+  jsBasicTotal,
+  jsDomTotal,
+  jsAsyncTotal,
+  jsObjectTotal)
+) {
   htmlTotal.textContent = `${html.length}ta savol mavjud`;
   cssTotal.textContent = `${css.length}ta savol mavjud`;
   cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
@@ -24,9 +42,16 @@ if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsBasicTotal, jsDomTotal, 
   jsDomTotal.textContent = `${jsDom.length}ta savol mavjud`;
   jsAsyncTotal.textContent = `${jsAsync.length}ta savol mavjud`;
   jsObjectTotal.textContent = `${jsObject.length}ta savol mavjud`;
-  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsBasic.length+jsDom.length+jsAsync.length+jsObject.length;
+  totalNumber.textContent =
+    html.length +
+    css.length +
+    cssAdvanced.length +
+    tboot.length +
+    jsBasic.length +
+    jsDom.length +
+    jsAsync.length +
+    jsObject.length;
 }
-
 
 function showQuestion(question) {
   questionElement.textContent = question.question;
@@ -36,10 +61,10 @@ function showQuestion(question) {
   }
 
   question.answers.forEach((answer, index) => {
-    const answerElement = document.createElement('button');
-    answerElement.classList.add('btn')
+    const answerElement = document.createElement("button");
+    answerElement.classList.add("btn");
     answerElement.textContent = answer;
-    answerElement.addEventListener('click', () => {
+    answerElement.addEventListener("click", () => {
       if (index === question.correctAnswer) {
         score++;
       }
@@ -51,11 +76,13 @@ function showQuestion(question) {
 }
 
 function showAnswers() {
-  const answerList = document.createElement('ul');
+  const answerList = document.createElement("ul");
   questions.forEach((question, index) => {
-    const answerItem = document.createElement('li');
-    answerItem.classList.add('list-item')
-    answerItem.innerHTML = `<h2 class="list-item-title">${index + 1}. ${question.question}</h2>`;
+    const answerItem = document.createElement("li");
+    answerItem.classList.add("list-item");
+    answerItem.innerHTML = `<h2 class="list-item-title">${index + 1}. ${
+      question.question
+    }</h2>`;
 
     const userAnswer = question.userAnswer;
     const correctAnswer = question.correctAnswer;
@@ -94,103 +121,72 @@ function getRandomQuestions(arr) {
 }
 
 let questions;
-const htmlBtn = document.querySelector('.html-btn');
-const cssBtn = document.querySelector('.css-btn');
-const cssAdvancedBtn = document.querySelector('.css-advanced');
-const tBoot = document.querySelector('.tboot-btn');
-const jsBasicBtn = document.querySelector('.js-basic');
-const jsDomBtn = document.querySelector('.js-dom-btn');
-const jsAsyncBtn = document.querySelector('.js-async-btn');
-const jsObjectBtn = document.querySelector('.js-object-btn');
-const mainWrapper = document.querySelector('.main-wrapper');
-const result = document.querySelector('#result');
+const htmlBtn = document.querySelector(".html-btn");
+const cssBtn = document.querySelector(".css-btn");
+const cssAdvancedBtn = document.querySelector(".css-advanced");
+const tBoot = document.querySelector(".tboot-btn");
+const jsBasicBtn = document.querySelector(".js-basic");
+const jsDomBtn = document.querySelector(".js-dom-btn");
+const jsAsyncBtn = document.querySelector(".js-async-btn");
+const jsObjectBtn = document.querySelector(".js-object-btn");
+const mainWrapper = document.querySelector(".main-wrapper");
+const result = document.querySelector("#result");
 
-const startQuiz = function(){
-  mainWrapper.classList.add('none');
-    result.classList.add('block')
-    currentQuestion = 0;
-    number.textContent = currentQuestion + 1;
-    showQuestion(questions[currentQuestion]);
-  }
-  
-  if(htmlBtn){
-    htmlBtn.addEventListener('click', function() {
-      htmlBtn.classList.add('none');
-      questions = getRandomQuestions(html);
-    startQuiz()
+const startQuiz = function () {
+  mainWrapper.classList.add("none");
+  result.classList.add("block");
+  currentQuestion = 0;
+  number.textContent = currentQuestion + 1;
+  showQuestion(questions[currentQuestion]);
+};
+
+// show questions when click btns
+const btnClickShowQuestions = (btn, arr)=>{
+  btn.addEventListener("click", function () {
+    btn.classList.add("none");
+    questions = getRandomQuestions(arr);
+    startQuiz();
   });
 }
-
-if(cssBtn){
-  cssBtn.addEventListener('click', function() {
-    cssBtn.classList.add('none');
-    questions = getRandomQuestions(css);
-    startQuiz()
-  });
+if (htmlBtn) {
+  btnClickShowQuestions(htmlBtn, html)
 }
-
-if(cssAdvancedBtn){
-  cssAdvancedBtn.addEventListener('click', function() {
-    cssAdvancedBtn.classList.add('none');
-    questions = getRandomQuestions(cssAdvanced);
-    startQuiz()
-  });
+if (cssBtn) {
+  btnClickShowQuestions(cssBtn, css)
 }
-
-if(tBoot){
-  tBoot.addEventListener('click', function() {
-    tBoot.classList.add('none');
-    questions = getRandomQuestions(tboot);
-    startQuiz()
-  });
+if (cssAdvancedBtn) {
+  btnClickShowQuestions(cssAdvancedBtn, cssAdvanced)
 }
-
-if(jsBasicBtn){
-  jsBasicBtn.addEventListener('click', function() {
-    jsBasicBtn.classList.add('none');
-    questions = getRandomQuestions(jsBasic);
-    startQuiz()
-  });
+if (tBoot) {
+  btnClickShowQuestions(tBoot, tboot)
 }
-
-if(jsDomBtn){
-  jsDomBtn.addEventListener('click', function() {
-    jsDomBtn.classList.add('none');
-    questions = getRandomQuestions(jsDom);
-    startQuiz()
-  });
+if (jsBasicBtn) {
+  btnClickShowQuestions(jsBasicBtn, jsBasic)
 }
-
-if(jsAsyncBtn){
-  jsAsyncBtn.addEventListener('click', function() {
-    jsAsyncBtn.classList.add('none');
-    questions = getRandomQuestions(jsAsync);
-    startQuiz()
-  });
+if (jsDomBtn) {
+  btnClickShowQuestions(jsDomBtn, jsDom)
 }
-
-if(jsObjectBtn){
-  jsObjectBtn.addEventListener('click', function() {
-    jsObjectBtn.classList.add('none');
-    questions = getRandomQuestions(jsObject);
-    startQuiz()
-  });
+if (jsAsyncBtn) {
+  btnClickShowQuestions(jsAsyncBtn, jsAsync)
+}
+if (jsObjectBtn) {
+  btnClickShowQuestions(jsObjectBtn, jsObject)
 }
 
 // Step next question
 function nextQuestion() {
-	currentQuestion++;
-	if (currentQuestion < questions.length) {
-		showQuestion(questions[currentQuestion]);
-		number.textContent = currentQuestion + 1;
-	} else {
-		showResults();
-		showAnswers();
-    result.classList.remove('block')
-		let btn = document.createElement("a");
-		btn.innerHTML = 'Bosh sahifa'
-		btn.classList.add('btn-margin')
-		btn.setAttribute("href", "index.html")
-		answersElement.appendChild(btn)
-	}
+  currentQuestion++;
+  if (currentQuestion < questions.length) {
+    showQuestion(questions[currentQuestion]);
+    number.textContent = currentQuestion + 1;
+  } else {
+    showResults();
+    showAnswers();
+    result.classList.remove("block");
+    let btn = document.createElement("a");
+    btn.innerHTML = "Bosh sahifa";
+    btn.classList.add("btn-margin");
+    btn.setAttribute("href", "index.html");
+    answersElement.appendChild(btn);
+  }
 }
