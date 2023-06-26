@@ -1,4 +1,4 @@
-import { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync } from './quiz.js';
+import { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync, jsObject} from './quiz.js';
 let number = document.querySelector('#number');
 let currentQuestion = 0;
 let score = 0;
@@ -12,9 +12,10 @@ const tBootTotal = document.querySelector('#tboot-total');
 const jsOneTotal = document.querySelector('#js-one-total');
 const jsTwoTotal = document.querySelector('#js-two-total');
 const jsAsyncTotal = document.querySelector('#js-async-total');
+const jsObjectTotal = document.querySelector('#js-object-total');
 const totalNumber = document.querySelector('#total-number');
 
-if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal, jsAsyncTotal){
+if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal, jsAsyncTotal, jsObjectTotal){
   htmlTotal.textContent = `${html.length}ta savol mavjud`;
   cssTotal.textContent = `${css.length}ta savol mavjud`;
   cssAdvancedTotal.textContent = `${cssAdvanced.length}ta savol mavjud`;
@@ -22,7 +23,8 @@ if(htmlTotal, cssTotal, cssAdvancedTotal, tBootTotal, jsOneTotal, jsTwoTotal, js
   jsOneTotal.textContent = `${jsOne.length}ta savol mavjud`;
   jsTwoTotal.textContent = `${jsTwo.length}ta savol mavjud`;
   jsAsyncTotal.textContent = `${jsAsync.length}ta savol mavjud`;
-  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length+jsTwo.length+jsAsync.length;
+  jsObjectTotal.textContent = `${jsObject.length}ta savol mavjud`;
+  totalNumber.textContent = html.length+css.length+cssAdvanced.length+tboot.length+jsOne.length+jsTwo.length+jsAsync.length+jsObject.length;
 }
 
 
@@ -99,6 +101,7 @@ const tBoot = document.querySelector('.tboot-btn');
 const jsOneBtn = document.querySelector('.js-btn');
 const jsTwoBtn = document.querySelector('.js-two-btn');
 const jsAsyncBtn = document.querySelector('.js-async-btn');
+const jsObjectBtn = document.querySelector('.js-object-btn');
 const mainWrapper = document.querySelector('.main-wrapper');
 const result = document.querySelector('#result');
 
@@ -162,6 +165,14 @@ if(jsAsyncBtn){
   jsAsyncBtn.addEventListener('click', function() {
     jsAsyncBtn.classList.add('none');
     questions = getRandomQuestions(jsAsync);
+    startQuiz()
+  });
+}
+
+if(jsObjectBtn){
+  jsObjectBtn.addEventListener('click', function() {
+    jsObjectBtn.classList.add('none');
+    questions = getRandomQuestions(jsObject);
     startQuiz()
   });
 }

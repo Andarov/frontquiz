@@ -1762,8 +1762,282 @@ const jsAsync = [
         correctAnswer: 1
     },
 ]
+const jsObject = [
+    {
+        question: `
+            const obj1 = {};
+            const obj2 = new Object();
+            console.log(obj1, obj2);
+        `,
+        answers: [ "{}","{}, {}","{}, []","{}, [{}]"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23
+            };
+            console.log(obj.familiya);
+        `,
+        answers: [ "null","undefined","error","' '"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23
+            };
+            console.log(obj['familiya']);
+        `,
+        answers: [ "null","undefined","error","' '"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23
+            };
+            console.log(obj['ism']);
+        `,
+        answers: [ "null","undefined","error","Abbos"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+                1: 'Bir'
+            };
+            console.log(obj.1);
+        `,
+        answers: [ "null","undefined","error","Bir"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+                1: 'Bir'
+            };
+            console.log(obj.1);
+        `,
+        answers: [ "null","undefined","error","Bir"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+                1: 'Bir'
+            };
+            console.log(obj[1]);
+        `,
+        answers: [ "null","undefined","error","Bir"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+                1: 'Bir'
+            };
+            console.log(obj['1']);
+        `,
+        answers: [ "null","undefined","error","Bir"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+                0: 'Nol'
+            };
+            console.log(obj[0]);
+        `,
+        answers: [ "null","Abbos","error","Nol"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+                1: 'Bir'
+            };
+            console.log(obj[1]);
+        `,
+        answers: [ "null","Abbos","error","Bir"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                familiya: 'Axrorov',
+                yosh: 23,
+            };
+            const ism = 'familiya';
+            console.log(obj.ism);
+        `,
+        answers: [ "null","Abbos","error","Axrorov"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                familiya: 'Axrorov',
+                yosh: 23,
+            };
+            const ism = 'familiya';
+            console.log(obj[ism]);
+        `,
+        answers: [ "null","Abbos","error","Axrorov"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                familiya: 'Axrorov',
+                yosh: 23,
+            };
+            const ism = 'familiya';
+            console.log(obj['ism']);
+        `,
+        answers: [ "null","Abbos","error","Axrorov"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            obj.ism = 'Asror'
+            console.log(obj.ism);
+        `,
+        answers: [ "null","Abbos","error","Asror"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            obj.yili = 1999
+            console.log(obj.yili);
+        `,
+        answers: [ "null","undefined","error","1999"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            obj.yili = 1999
+            delete obj.yili
+            console.log(obj.yili);
+        `,
+        answers: [ "null","undefined","error","1999"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj1 = {};
+            const obj2 = new Object();
+            console.log(obj1, obj2);
+        `,
+        answers: [ "null","undefined","true","false"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            const obj2 = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            console.log(obj == obj2);
+        `,
+        answers: [ "null","undefined","true","false"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            const obj2 = obj
+            console.log(obj == obj2);
+        `,
+        answers: [ "null","undefined","true","false"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            const obj2 = obj
+            console.log(obj === obj2);
+        `,
+        answers: [ "null","undefined","true","false"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            const ism = 'Abbos'
+            const obj = {
+                ism,
+                yosh: 23,
+            };
+            console.log(obj.ism);
+        `,
+        answers: [ "null","undefined","Abbos","error"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            console.log('ism' in obj);
+        `,
+        answers: [ "null","false","Abbos","true"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            console.log(ism in obj);
+        `,
+        answers: [ "error","false","Abbos","true"],
+        correctAnswer: 0
+    },
+]
 
-export { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync }
+export { html, css, cssAdvanced, tboot, jsOne, jsTwo, jsAsync, jsObject }
 
 
 
