@@ -1804,7 +1804,7 @@ const jsObject = [
             console.log(obj['ism']);
         `,
         answers: [ "null","undefined","error","Abbos"],
-        correctAnswer: 1
+        correctAnswer: 3
     },
     {
         question: `
@@ -1958,7 +1958,16 @@ const jsObject = [
         question: `
             const obj1 = {};
             const obj2 = new Object();
-            console.log(obj1, obj2);
+            console.log(obj1 == obj2);
+        `,
+        answers: [ "null","undefined","true","false"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj1 = {};
+            const obj2 = new Object();
+            console.log(obj1 === obj2);
         `,
         answers: [ "null","undefined","true","false"],
         correctAnswer: 3
@@ -2034,6 +2043,107 @@ const jsObject = [
             console.log(ism in obj);
         `,
         answers: [ "error","false","Abbos","true"],
+        correctAnswer: 0
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            const obj1 = obj;
+            obj.name = 'Shaxboz'
+            console.log(obj1.name);
+        `,
+        answers: [ "error","Shaxboz","Abbos","undefined"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            const obj1 = obj;
+            obj1.yosh = 24
+            console.log(obj.yosh);
+        `,
+        answers: [ "error","23","24","undefined"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            console.log(this == window);
+        `,
+        answers: [ "error","true","false","undefined"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            console.log(this === window);
+        `,
+        answers: [ "error","true","false","undefined"],
+        correctAnswer: 1
+    },
+    {
+        question: `Agar javascript fayl modul kontekstida ishlayotgan bo'lsa
+        console.log(this === window);
+        consoleda nima chiqadi?`,
+        answers: [ "null","true","false","undefined"],
+        correctAnswer: 2
+    },
+    {
+        question: `Agar javascript fayl modul kontekstida ishlayotgan bo'lsa
+        console.log(this == window);
+        consoleda nima chiqadi?`,
+        answers: [ "null","true","false","undefined"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            console.log(this);
+        `,
+        answers: [ "error","window","document","undefined"],
+        correctAnswer: 1
+    },
+    {
+        question: `
+            const familiya = "Andarov";
+            const obj = {
+                familiya,
+                age: 23
+            }
+            console.log(obj.familiya);
+        `,
+        answers: [ "error","null","Andarov","undefined"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            let salom = function(){
+                console.log('salom');
+            }
+            const obj = {
+                age: 23,
+                salom: salom
+            }
+            obj.salom()
+        `,
+        answers: [ "error","null","salom","undefined"],
+        correctAnswer: 0
+    },
+    {
+        question: `
+            let salom = function(){
+                console.log('salom');
+            }
+            const obj = {
+                age: 23,
+                salom
+            }
+            obj.salom()
+        `,
+        answers: [ "error","null","salom","undefined"],
         correctAnswer: 0
     },
 ]
