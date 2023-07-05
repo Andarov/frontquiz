@@ -26,13 +26,17 @@ function closeModal() {
   elOverlay.style.display = 'none';
 }
 
-elDonateBtn.addEventListener('click', function() {
-  openModal();
-});
+if (elDonateBtn) {
+  elDonateBtn.addEventListener('click', function() {
+    openModal();
+  });
+}
 
-elXmark.addEventListener('click', function() {
-  closeModal();
-});
+if (elXmark) {
+  elXmark.addEventListener('click', function() {
+    closeModal();
+  });
+}
 
 window.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
