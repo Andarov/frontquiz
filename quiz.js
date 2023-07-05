@@ -1825,18 +1825,6 @@ const jsObject = [
                 yosh: 23,
                 1: 'Bir'
             };
-            console.log(obj.1);
-        `,
-        answers: [ "null","undefined","error","Bir"],
-        correctAnswer: 2
-    },
-    {
-        question: `
-            const obj = {
-                ism: 'Abbos',
-                yosh: 23,
-                1: 'Bir'
-            };
             console.log(obj[1]);
         `,
         answers: [ "null","undefined","error","Bir"],
@@ -1993,6 +1981,21 @@ const jsObject = [
                 ism: 'Abbos',
                 yosh: 23,
             };
+            const obj2 = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
+            console.log(obj === obj2);
+        `,
+        answers: [ "null","undefined","true","false"],
+        correctAnswer: 3
+    },
+    {
+        question: `
+            const obj = {
+                ism: 'Abbos',
+                yosh: 23,
+            };
             const obj2 = obj
             console.log(obj == obj2);
         `,
@@ -2130,7 +2133,7 @@ const jsObject = [
             obj.salom()
         `,
         answers: [ "error","null","salom","undefined"],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
         question: `
@@ -2144,17 +2147,25 @@ const jsObject = [
             obj.salom()
         `,
         answers: [ "error","null","salom","undefined"],
+        correctAnswer: 2
+    },
+    {
+        question: `
+            let salom = function(){
+                console.log('salom');
+            }
+            const obj = {
+                age: 23,
+                salom: salom()
+            }
+            obj.salom()
+        `,
+        answers: [ "salom & error","salom & null","salom","salom & undefined"],
         correctAnswer: 0
     },
 ]
 
 export { html, css, cssAdvanced, tboot, jsBasic, jsDom, jsAsync, jsObject }
-
-
-
-
-
-
 
 
 
