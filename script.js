@@ -10,6 +10,36 @@ import {
 } from "./quiz.js";
 let jsGeneral = [...jsBasic, ...jsDom, ...jsAsync, ...jsObject];
 
+// Donate modal
+const elDonateBtn = document.querySelector('.donate-js');
+const elOverlay = document.querySelector('.overlay');
+const elXmark = document.querySelector('.xmark');
+const elModal = document.querySelector('.modal');
+
+function openModal() {
+  elModal.style.display = 'block';
+  elOverlay.style.display = 'block';
+}
+
+function closeModal() {
+  elModal.style.display = 'none';
+  elOverlay.style.display = 'none';
+}
+
+elDonateBtn.addEventListener('click', function() {
+  openModal();
+});
+
+elXmark.addEventListener('click', function() {
+  closeModal();
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
+
 let number = document.querySelector("#number");
 let currentQuestion = 0;
 let score = 0;
