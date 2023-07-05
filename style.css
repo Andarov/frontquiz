@@ -541,6 +541,7 @@ span{
 }
 
 .number {
+  font-family: monospace;
   font-size: 35px;
   line-height: 1.2;
   color: rgb(180, 160, 47);
