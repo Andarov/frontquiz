@@ -1777,8 +1777,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23
-            };
+                yosh: 23 };
             console.log(obj.familiya);
         `,
         answers: [ "null","undefined","error","' '"],
@@ -1788,8 +1787,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23
-            };
+                yosh: 23 };
             console.log(obj['familiya']);
         `,
         answers: [ "null","undefined","error","' '"],
@@ -1799,8 +1797,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23
-            };
+                yosh: 23 };
             console.log(obj['ism']);
         `,
         answers: [ "null","undefined","error","Abbos"],
@@ -1811,8 +1808,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 yosh: 23,
-                1: 'Bir'
-            };
+                1: 'Bir' };
             console.log(obj.1);
         `,
         answers: [ "null","undefined","error","Bir"],
@@ -1823,8 +1819,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 yosh: 23,
-                1: 'Bir'
-            };
+                1: 'Bir' };
             console.log(obj[1]);
         `,
         answers: [ "null","undefined","error","Bir"],
@@ -1835,8 +1830,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 yosh: 23,
-                1: 'Bir'
-            };
+                1: 'Bir' };
             console.log(obj['1']);
         `,
         answers: [ "null","undefined","error","Bir"],
@@ -1847,8 +1841,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 yosh: 23,
-                0: 'Nol'
-            };
+                0: 'Nol' };
             console.log(obj[0]);
         `,
         answers: [ "null","Abbos","error","Nol"],
@@ -1859,8 +1852,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 yosh: 23,
-                1: 'Bir'
-            };
+                1: 'Bir' };
             console.log(obj[1]);
         `,
         answers: [ "null","Abbos","error","Bir"],
@@ -1871,8 +1863,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 familiya: 'Axrorov',
-                yosh: 23,
-            };
+                yosh: 23, };
             const ism = 'familiya';
             console.log(obj.ism);
         `,
@@ -1884,8 +1875,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 familiya: 'Axrorov',
-                yosh: 23,
-            };
+                yosh: 23, };
             const ism = 'familiya';
             console.log(obj[ism]);
         `,
@@ -1897,8 +1887,7 @@ const jsObject = [
             const obj = {
                 ism: 'Abbos',
                 familiya: 'Axrorov',
-                yosh: 23,
-            };
+                yosh: 23, };
             const ism = 'familiya';
             console.log(obj['ism']);
         `,
@@ -1909,8 +1898,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             obj.ism = 'Asror'
             console.log(obj.ism);
         `,
@@ -1921,8 +1909,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             obj.yili = 1999
             console.log(obj.yili);
         `,
@@ -1933,8 +1920,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             obj.yili = 1999
             delete obj.yili
             console.log(obj.yili);
@@ -1964,12 +1950,10 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             const obj2 = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             console.log(obj == obj2);
         `,
         answers: [ "null","undefined","true","false"],
@@ -1979,12 +1963,10 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             const obj2 = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             console.log(obj === obj2);
         `,
         answers: [ "null","undefined","true","false"],
@@ -1994,8 +1976,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             const obj2 = obj
             console.log(obj == obj2);
         `,
@@ -2006,8 +1987,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             const obj2 = obj
             console.log(obj === obj2);
         `,
@@ -2019,8 +1999,7 @@ const jsObject = [
             const ism = 'Abbos'
             const obj = {
                 ism,
-                yosh: 23,
-            };
+                yosh: 23, };
             console.log(obj.ism);
         `,
         answers: [ "null","undefined","Abbos","error"],
@@ -2030,8 +2009,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             console.log('ism' in obj);
         `,
         answers: [ "null","false","Abbos","true"],
@@ -2041,8 +2019,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             console.log(ism in obj);
         `,
         answers: [ "error","false","Abbos","true"],
@@ -2052,8 +2029,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             const obj1 = obj;
             obj.name = 'Shaxboz'
             console.log(obj1.name);
@@ -2065,8 +2041,7 @@ const jsObject = [
         question: `
             const obj = {
                 ism: 'Abbos',
-                yosh: 23,
-            };
+                yosh: 23, };
             const obj1 = obj;
             obj1.yosh = 24
             console.log(obj.yosh);
@@ -2114,8 +2089,7 @@ const jsObject = [
             const familiya = "Andarov";
             const obj = {
                 familiya,
-                age: 23
-            }
+                age: 23 }
             console.log(obj.familiya);
         `,
         answers: [ "error","null","Andarov","undefined"],
@@ -2124,12 +2098,10 @@ const jsObject = [
     {
         question: `
             let salom = function(){
-                console.log('salom');
-            }
+                console.log('salom'); }
             const obj = {
                 age: 23,
-                salom: salom
-            }
+                salom: salom }
             obj.salom()
         `,
         answers: [ "error","null","salom","undefined"],
@@ -2138,12 +2110,10 @@ const jsObject = [
     {
         question: `
             let salom = function(){
-                console.log('salom');
-            }
+                console.log('salom'); }
             const obj = {
                 age: 23,
-                salom
-            }
+                salom }
             obj.salom()
         `,
         answers: [ "error","null","salom","undefined"],
@@ -2152,12 +2122,10 @@ const jsObject = [
     {
         question: `
             let salom = function(){
-                console.log('salom');
-            }
+                console.log('salom');}
             const obj = {
                 age: 23,
-                salom: salom()
-            }
+                salom: salom() }
             obj.salom()
         `,
         answers: [ "salom & error","salom & null","salom","salom & undefined"],
