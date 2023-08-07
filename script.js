@@ -27,15 +27,11 @@ function closeModal() {
 }
 
 if (elDonateBtn) {
-  elDonateBtn.addEventListener('click', function() {
-    openModal();
-  });
+  elDonateBtn.addEventListener('click', openModal);
 }
 
 if (elXmark) {
-  elXmark.addEventListener('click', function() {
-    closeModal();
-  });
+  elXmark.addEventListener('click', closeModal);
 }
 
 window.addEventListener('keydown', function(event) {
