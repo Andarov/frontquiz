@@ -14,9 +14,9 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <!-- google adsense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4611912129342481"
-        crossorigin="anonymous"></script>
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb = window.yaContextCb || []</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X76DZG3P99"></script>
@@ -49,13 +49,15 @@
         </div>
     </main>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4611912129342481"
-        crossorigin="anonymous"></script>
-    <!-- AdsField -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4611912129342481" data-ad-slot="5396868423"
-        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <!-- Yandex.RTB R-A-12311693-1 -->
     <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+                "blockId": "R-A-12311693-1",
+                "type": "floorAd",
+                "platform": "touch"
+            })
+        })
     </script>
 
     <script type="module" src="./quiz.js"></script>
