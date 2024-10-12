@@ -1,322 +1,337 @@
-  <!DOCTYPE html>
-  <html lang="uz">
+<!DOCTYPE html>
+<html lang="uz">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta id="description" name="description"
-      content="FrontQuiz - frontend dasturlash bo'yicha tuzilgan test savollar to'plami">
-    <meta id="keywords" name="keywords"
-      content="frontquiz, FrontQuiz, frontQuiz, frontend, frontend test, frontend test savollar, html, css, Javascript, javascript, html test, css test, javascript test, tailwind, Bootstrap, bootstrap, tailwind test, bootstrap test, test savollar, quiz, frontend quiz, html quiz, css quiz, javascript quiz">
-    <meta id="name" name="itemprop" content="FrontQuiz / Frontend test savollar to'plami">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://frontquiz.uz/" />
-    <meta property="og:image" content="https://frontquiz.uz/img/logos.png" />
-    <meta property="og:image:width" content="1036" />
-    <meta property="og:image:height" content="416" />
-    <meta property="og:image:type" content="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta id="description" name="description"
+    content="FrontQuiz - frontend dasturlash bo'yicha tuzilgan test savollar to'plami">
+  <meta id="keywords" name="keywords"
+    content="frontquiz, FrontQuiz, frontQuiz, frontend, frontend test, frontend test savollar, html, css, Javascript, javascript, html test, css test, javascript test, tailwind, Bootstrap, bootstrap, tailwind test, bootstrap test, test savollar, quiz, frontend quiz, html quiz, css quiz, javascript quiz">
+  <meta id="name" name="itemprop" content="FrontQuiz / Frontend test savollar to'plami">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://frontquiz.uz/" />
+  <meta property="og:image" content="https://frontquiz.uz/img/logos.png" />
+  <meta property="og:image:width" content="1036" />
+  <meta property="og:image:height" content="416" />
+  <meta property="og:image:type" content="image/png" />
 
-    <!-- Google -->
-    <meta name="google-site-verification" content="q0mSrLkN9ZpGzfF-t1X7w72QIFQDE6iMHwgZMatg7zU" />
-    <meta name="googlebot" id="googlebot" content="index, follow">
-    <!-- Yandeks -->
-    <meta name="yandex-verification" content="0d98a88b237bac56" />
-    <meta name="yandex-verification" id="yandex-verification" content="index, follow">
-    <meta name="yandex" id="yandex" content="index, follow">
-    <title>FrontQuiz / Frontend test savollar to'plami</title>
+  <!-- Google -->
+  <meta name="google-site-verification" content="q0mSrLkN9ZpGzfF-t1X7w72QIFQDE6iMHwgZMatg7zU" />
+  <meta name="googlebot" id="googlebot" content="index, follow">
+  <!-- Yandeks -->
+  <meta name="yandex-verification" content="0d98a88b237bac56" />
+  <meta name="yandex-verification" id="yandex-verification" content="index, follow">
+  <meta name="yandex" id="yandex" content="index, follow">
+  <title>FrontQuiz / Frontend test savollar to'plami</title>
 
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
 
 
-    <!-- Font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Css -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="./style.css">
 
-    <!-- favicon image -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <!-- favicon image -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
-    <!-- Yandex.RTB -->
-    <script>window.yaContextCb = window.yaContextCb || []</script>
-    <script src="https://yandex.ru/ads/system/context.js" async></script>
+  <!-- Yandex.RTB -->
+  <script>window.yaContextCb = window.yaContextCb || []</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X76DZG3P99"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X76DZG3P99"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X76DZG3P99');
+  </script>
+</head>
+
+<body>
+
+  <aside class="container">
+    <!-- Yandex.RTB R-A-12328467-1 -->
+    <div id="yandex_rtb_R-A-12328467-1"></div>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'G-X76DZG3P99');
+      window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+          "blockId": "R-A-12328467-1",
+          "renderTo": "yandex_rtb_R-A-12328467-1"
+        })
+      })
     </script>
-  </head>
-
-  <body>
-
-    <aside class="container">
-      <!-- Yandex.RTB R-A-12328467-1 -->
-      <div id="yandex_rtb_R-A-12328467-1"></div>
-      <script>
-          window.yaContextCb.push(() => {
-              Ya.Context.AdvManager.render({
-                  "blockId": "R-A-12328467-1",
-                  "renderTo": "yandex_rtb_R-A-12328467-1"
-              })
-          })
-      </script>
   </aside>
 
-    <!-- top -->
-    <div class="top">
-      <div class="top-container container">
-        <!-- donate -->
-        <button class="donate-btn donate-js">
-          <span class="donate-text">Chin ko'ngildan</span>
-        </button>
+  <!-- top -->
+  <div class="top">
+    <div class="top-container container">
+      <!-- donate -->
+      <button class="donate-btn donate-js">
+        <span class="donate-text">Chin ko'ngildan</span>
+      </button>
 
-        <!-- Telegram link -->
-        <a href="https://t.me/Andarov_B" target="_blank" class="link">
+      <!-- Telegram link -->
+      <a href="https://t.me/Andarov_B" target="_blank" class="link">
 
-          <div class="sign">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z"
-                fill="#252420" />
-            </svg>
-          </div>
-
-          <div class="text">Aloqa</div>
-        </a>
-      </div>
-    </div>
-
-    <!-- Top -->
-    <div class="hero">
-      <div class="container hero-container">
-        <h1 class="hero-title">Front<span class="hero-title-mark">Quiz</span></h1>
-        <p class="hero-text">Ushbu saytda siz HTML, CSS, Javascript bo'yicha tuzilgan eng sara savollar asosida, o'z
-          bilimlaringizni sinovdan o'tkazib olishingiz mumkin.</p>
-
-        <img class="logos" src="./img/logos.png" alt="">
-
-        <p class="hero-text-success">Omad!!!</p>
-      </div>
-    </div>
-
-    <!-- Main -->
-    <main>
-      <section class="questions-section">
-        <div class="container">
-          <h2 class="questions-title">Bo'limlar</h2>
-
-          <!-- question-items -->
-          <div class="questions-wrapper">
-
-            <!-- Html -->
-            <a class="question" href="html.html" rel="noopener">
-              <div class="header">
-                <img src="./img/html.svg" alt="html icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">HTML</h3>
-                <p class="details-total" id="html-total"></p>
-              </div>
-            </a>
-
-            <!-- CSS-basic -->
-            <a class="question" href="css-basic.html" rel="noopener">
-              <div class="header">
-                <img src="./img/css.svg" alt="CSS icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">CSS basic</h3>
-                <p class="details-total" id="css-total">70+ savollar</p>
-              </div>
-            </a>
-
-            <!-- CSS-advanced -->
-            <a class="question" href="css-advanced.html" rel="noopener">
-              <div class="header">
-                <img src="./img/css.svg" alt="CSS icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">CSS advanced</h3>
-                <p class="details-total" id="css-advanced-total">50+ savollar</p>
-              </div>
-            </a>
-
-            <!-- Bootstrap vs Tailwind -->
-            <a class="question" href="tboot.html" rel="noopener">
-              <div class="header">
-                <div>
-                  <img src="./img/boot.png" alt="Bootstrap icon" width="60" style="margin-right: 10px;">
-                  <img src="./img/tailwind.svg" alt="Tailwind icon" width="60">
-                </div>
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Bootstrap va Tailwind</h3>
-                <p class="details-total" id="tboot-total">50+ savollar</p>
-              </div>
-            </a>
-
-            <!-- JS general -->
-            <a class="question" href="js-general.html" rel="noopener">
-              <div class="header">
-                <img src="./img/js.svg" alt="Javascript icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Javascript umumiy</h3>
-                <p style="margin-bottom: 26px;">Javascript bo'yicha umumiy test savollar</p>
-                <p class="details-total" id="js-general-total">80+ savollar</p>
-              </div>
-            </a>
-
-            <!-- JS basic -->
-            <a class="question" href="js-basic.html" rel="noopener">
-              <div class="header">
-                <img src="./img/js.svg" alt="Javascript icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Javascript I</h3>
-                <p style="margin-bottom: 26px;">Data types, variables, operators</p>
-                <p class="details-total" id="js-basic-total">80+ savollar</p>
-              </div>
-            </a>
-
-            <!-- JS two -->
-            <a class="question" href="js-dom.html" rel="noopener">
-              <div class="header">
-                <img src="./img/js.svg" alt="Javascript icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Javascript II</h3>
-                <p style="margin-bottom: 26px;">DOM</p>
-                <p class="details-total" id="js-dom-total">80+ savollar</p>
-              </div>
-            </a>
-
-            <!-- JS three -->
-            <a class="question" href="async-js.html" rel="noopener">
-              <div class="header">
-                <img src="./img/js.svg" alt="Javascript icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Javascript III</h3>
-                <p style="margin-bottom: 26px;">Asinxron Javascript</p>
-                <p class="details-total" id="js-async-total">tez orada</p>
-              </div>
-            </a>
-
-            <!-- JS four -->
-            <a class="question" href="js-object.html" rel="noopener">
-              <div class="header">
-                <img src="./img/js.svg" alt="Javascript icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Javascript IV</h3>
-                <p style="margin-bottom: 26px;">Object</p>
-                <p class="details-total" id="js-object-total">tez orada</p>
-              </div>
-            </a>
-
-            <!-- JS five -->
-            <a class="question" href="js5.html" rel="noopener">
-              <div class="header">
-                <img src="./img/js.svg" alt="Javascript icon" width="60">
-
-                <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
-              </div>
-
-              <div class="details">
-                <h3 class="details-title">Javascript V</h3>
-                <p style="margin-bottom: 26px;">BOM</p>
-                <p class="details-total" id="js-two-total">tez orada</p>
-              </div>
-            </a>
-
-          </div>
-
-          <div class="total-wrapper">
-            <p class="total-number">Jami savollar: <span id="total-number"></span></p>
-          </div>
+        <div class="sign">
+          <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z"
+              fill="#252420" />
+          </svg>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+        <div class="text">Aloqa</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Top -->
+  <div class="hero">
+    <div class="container hero-container">
+      <h1 class="hero-title">Front<span class="hero-title-mark">Quiz</span></h1>
+      <p class="hero-text">Ushbu saytda siz HTML, CSS, Javascript bo'yicha tuzilgan eng sara savollar asosida, o'z
+        bilimlaringizni sinovdan o'tkazib olishingiz mumkin.</p>
+
+      <img class="logos" src="./img/logos.png" alt="">
+
+      <p class="hero-text-success">Omad!!!</p>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <section class="questions-section">
       <div class="container">
-        <h2 class="footer-title">Created by Andarov</h2>
+        <h2 class="questions-title">Bo'limlar</h2>
+
+        <!-- question-items -->
+        <div class="questions-wrapper">
+
+          <!-- Html -->
+          <a class="question" href="html.html" rel="noopener">
+            <div class="header">
+              <img src="./img/html.svg" alt="html icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">HTML</h3>
+              <p class="details-total" id="html-total"></p>
+            </div>
+          </a>
+
+          <!-- CSS-basic -->
+          <a class="question" href="css-basic.html" rel="noopener">
+            <div class="header">
+              <img src="./img/css.svg" alt="CSS icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">CSS basic</h3>
+              <p class="details-total" id="css-total">70+ savollar</p>
+            </div>
+          </a>
+
+          <!-- CSS-advanced -->
+          <a class="question" href="css-advanced.html" rel="noopener">
+            <div class="header">
+              <img src="./img/css.svg" alt="CSS icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">CSS advanced</h3>
+              <p class="details-total" id="css-advanced-total">50+ savollar</p>
+            </div>
+          </a>
+
+          <!-- Bootstrap vs Tailwind -->
+          <a class="question" href="tboot.html" rel="noopener">
+            <div class="header">
+              <div>
+                <img src="./img/boot.png" alt="Bootstrap icon" width="60" style="margin-right: 10px;">
+                <img src="./img/tailwind.svg" alt="Tailwind icon" width="60">
+              </div>
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Bootstrap va Tailwind</h3>
+              <p class="details-total" id="tboot-total">50+ savollar</p>
+            </div>
+          </a>
+
+          <!-- JS general -->
+          <a class="question" href="js-general.html" rel="noopener">
+            <div class="header">
+              <img src="./img/js.svg" alt="Javascript icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Javascript umumiy</h3>
+              <p style="margin-bottom: 26px;">Javascript bo'yicha umumiy test savollar</p>
+              <p class="details-total" id="js-general-total">80+ savollar</p>
+            </div>
+          </a>
+
+          <!-- JS basic -->
+          <a class="question" href="js-basic.html" rel="noopener">
+            <div class="header">
+              <img src="./img/js.svg" alt="Javascript icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Javascript I</h3>
+              <p style="margin-bottom: 26px;">Data types, variables, operators</p>
+              <p class="details-total" id="js-basic-total">80+ savollar</p>
+            </div>
+          </a>
+
+          <!-- JS two -->
+          <a class="question" href="js-dom.html" rel="noopener">
+            <div class="header">
+              <img src="./img/js.svg" alt="Javascript icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Javascript II</h3>
+              <p style="margin-bottom: 26px;">DOM</p>
+              <p class="details-total" id="js-dom-total">80+ savollar</p>
+            </div>
+          </a>
+
+          <!-- JS three -->
+          <a class="question" href="async-js.html" rel="noopener">
+            <div class="header">
+              <img src="./img/js.svg" alt="Javascript icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Javascript III</h3>
+              <p style="margin-bottom: 26px;">Asinxron Javascript</p>
+              <p class="details-total" id="js-async-total">tez orada</p>
+            </div>
+          </a>
+
+          <!-- JS four -->
+          <a class="question" href="js-object.html" rel="noopener">
+            <div class="header">
+              <img src="./img/js.svg" alt="Javascript icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Javascript IV</h3>
+              <p style="margin-bottom: 26px;">Object</p>
+              <p class="details-total" id="js-object-total">tez orada</p>
+            </div>
+          </a>
+
+          <!-- JS five -->
+          <a class="question" href="js5.html" rel="noopener">
+            <div class="header">
+              <img src="./img/js.svg" alt="Javascript icon" width="60">
+
+              <img class="question-arrow" src="./img/top-right.png" alt="Arrow icon" width="32" height="32">
+            </div>
+
+            <div class="details">
+              <h3 class="details-title">Javascript V</h3>
+              <p style="margin-bottom: 26px;">BOM</p>
+              <p class="details-total" id="js-two-total">tez orada</p>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="total-wrapper">
+          <p class="total-number">Jami savollar: <span id="total-number"></span></p>
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer-title">Created by Andarov</h2>
+    </div>
+  </footer>
 
 
-    <!-- Modal buy me coffee -->
-    <div class="modal">
-      <div class="card-wrapper">
-        <div class="card">
-          <button class="xmark">
-            <img src="./img/xmark.png" width="40" height="40" alt="Xmark icon">
-          </button>
-          <div class="front">
-            <span class="logo">Hamkorbank</span>
-            <span class="set"></span>
-            <span class="number">9860 1601 0289 3908</span>
-            <span class="when">XX / XX</span>
-            <span class="name">Andarov Bektur</span>
-            <span class="img">Humo</span>
-          </div>
+  <!-- Modal buy me coffee -->
+  <div class="modal">
+    <div class="card-wrapper">
+      <div class="card">
+        <button class="xmark">
+          <img src="./img/xmark.png" width="40" height="40" alt="Xmark icon">
+        </button>
+        <div class="front">
+          <span class="logo">Hamkorbank</span>
+          <span class="set"></span>
+          <span class="number">9860 1601 0289 3908</span>
+          <span class="when">XX / XX</span>
+          <span class="name">Andarov Bektur</span>
+          <span class="img">Humo</span>
+        </div>
 
-          <div class="back">
-            <span class="about">Milliy banklararo protsessing markazi</span>
-            <span class="site">www.humocard.uz</span>
-            <span class="box"></span>
-            <span class="rule">Ushbu karta bankning mulkidir. Bank kartasi topilganida bankga qaytarib berishingizni
-              so'raymiz</span>
-            <span class="tel">Murojaat uchun <strong>(+998) 71 200 0888</strong></span>
-          </div>
+        <div class="back">
+          <span class="about">Milliy banklararo protsessing markazi</span>
+          <span class="site">www.humocard.uz</span>
+          <span class="box"></span>
+          <span class="rule">Ushbu karta bankning mulkidir. Bank kartasi topilganida bankga qaytarib berishingizni
+            so'raymiz</span>
+          <span class="tel">Murojaat uchun <strong>(+998) 71 200 0888</strong></span>
         </div>
       </div>
     </div>
-    <div class="overlay"></div>
+  </div>
+  <div class="overlay"></div>
+
+  <aside>
+    <div class="container">
+      <!-- Yandex.RTB R-A-12328467-2 -->
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            "blockId": "R-A-12328467-2",
+            "type": "floorAd",
+            "platform": "touch"
+          })
+        })
+      </script>
+    </div>
+  </aside>
 
 
-    <script type="module" src="quiz.js"></script>
-    <script type="module" src="script.js"></script>
+  <script type="module" src="quiz.js"></script>
+  <script type="module" src="script.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>
